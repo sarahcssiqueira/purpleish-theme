@@ -2,6 +2,8 @@
 
 .banner {
 	background-color: $background;
+	background-image: url($dentist);
+	background-size:cover;
 	padding: 5rem; 
 	text-align: center;
 }

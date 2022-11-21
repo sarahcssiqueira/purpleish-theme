@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying single custom posts:Skills.
+ * The template for displaying single custom posts:Services.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
@@ -17,7 +17,7 @@
 					
 					the_post();
 					
-					get_template_part( 'template-parts/content' , 'single-skill' );
+					get_template_part( 'template-parts/content' , 'single-services' );
 					
 				}
 			};?>

@@ -1,7 +1,8 @@
 /* Fonts */
 
-$fontPrimary: 'Poppins', sans-serif;
-$fontSecondary: 'Poppins', sans-serif;
+$fontPrimary: 'Lato', sans-serif;
+$fontSecondary: 'Lato', sans-serif;
+
 
 /*Font Sizes */
 
@@ -11,12 +12,16 @@ $fontLarge: 1.2rem;
 
 /* Colors */
 
-$background: #1a0024;
+$background: #3C738C;
 $backgroundLight:white;
-$backgroundDark:black;
-$highlight:blueviolet;
+$backgroundDark:#000d13;
+$highlight:#0488f3;
 $textLight: white;
 $textMedium:#181818;
 $textDark:$background;
-$btnBg:#d5004a;
+$btnBg:#134b64;
 $hoverIcons:$btnBg;
+
+/*Images */
+
+$dentist: 'https://cdn.pixabay.com/photo/2021/08/10/13/43/orthodontics-6536026_960_720.jpg';

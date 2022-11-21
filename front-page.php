@@ -20,10 +20,9 @@
 					
 					get_template_part( 'template-parts/content' , 'banner' );
 
-                    get_template_part( 'template-parts/content' , 'skills' );
+					get_template_part( 'template-parts/content' , 'heading' );
 
-                    /* Create feature 
-					get_template_part( 'template-parts/content' , 'download' ); */
+                    get_template_part( 'template-parts/content' , 'services' );
 
                     get_template_part( 'template-parts/content' , 'contact' );
 					

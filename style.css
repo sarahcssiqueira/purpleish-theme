@@ -1,68 +1,18 @@
 /*
-Theme Name: Resume Online Theme
+Theme Name: Dentist Clinic Theme
 Version: 1.0
-Description: Lorem Ipsum
+Description: Dentist clinic theme
 Tags:
 Author: Sarah Siqueira
 Author URI:https://sarahcssiqueira.ga/
 */
-ul, li {
-  list-style: none;
-  padding: 0;
-}
-
-.sessions li {
-  padding-bottom: 1.5rem;
-  border-left: 1px solid #abaaed;
-  position: relative;
-  padding-left: 20px;
-  margin-left: 10px;
-}
-.sessions li:last-child {
-  border: 0px;
-  padding-bottom: 0;
-}
-.sessions li:before {
-  content: "";
-  width: 15px;
-  height: 15px;
-  background: white;
-  border: 1px solid #4e5ed3;
-  box-shadow: 3px 3px 0px #bab5f8;
-  box-shadow: 3px 3px 0px #bab5f8;
-  border-radius: 50%;
-  position: absolute;
-  left: -10px;
-  top: 0px;
-}
-
-.skills li {
-  padding-bottom: 1rem;
-}
-
-.time {
-  color: #2a2839;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-}
-@media screen and (min-width: 601px) {
-  .time {
-    font-size: 0.9rem;
-  }
-}
-@media screen and (max-width: 600px) {
-  .time {
-    margin-bottom: 0.3rem;
-    font-size: 0.85rem;
-  }
-}
-
 /* Fonts */
 /*Font Sizes */
 /* Colors */
+/*Images */
 .header {
   z-index: 5;
-  background: #1a0024;
+  background: #3C738C;
   padding: 1rem;
   display: flex;
   justify-content: space-around;
@@ -84,7 +34,7 @@ ul, li {
   text-transform: capitalize;
   font-size: 1.2rem;
   color: white;
-  background-color: blueviolet;
+  background-color: #0488f3;
 }
 
 .headerMenu {
@@ -138,18 +88,22 @@ ul, li {
 }
 
 .headerIcons li a:hover {
-  background-color: #d5004a;
+  background-color: #134b64;
   color: white;
 }
 
 /* Fonts */
 /*Font Sizes */
 /* Colors */
+/*Images */
 /* Fonts */
 /*Font Sizes */
 /* Colors */
+/*Images */
 .banner {
-  background-color: #1a0024;
+  background-color: #3C738C;
+  background-image: url("https://cdn.pixabay.com/photo/2021/08/10/13/43/orthodontics-6536026_960_720.jpg");
+  background-size: cover;
   padding: 5rem;
   text-align: center;
 }
@@ -188,22 +142,43 @@ ul, li {
 .bannerInfo i {
   padding: 0.2rem;
   font-size: 0.9rem;
-  color: #d5004a;
+  color: #134b64;
 }
 
 /* Fonts */
 /*Font Sizes */
 /* Colors */
-.skills {
-  background-color: white;
-  padding: 1rem;
+/*Images */
+.heading {
+  background-color: #3C738C;
+  padding: 1.2rem;
+  text-align: center;
+  line-height: 3rem;
 }
-.skills h2 {
+
+.heading section h1 {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 0.8rem;
+  color: white;
+  padding: 1.5rem;
+}
+
+/* Fonts */
+/*Font Sizes */
+/* Colors */
+/*Images */
+.services {
+  background-color: white;
+  padding: 0.5rem;
+  padding-top: 0.5rem;
+}
+.services h2 {
   display: flex;
   justify-content: center;
 }
 
-.skills li {
+.services li {
   display: inline-block;
   color: #181818;
   font-size: 16px;
@@ -215,67 +190,40 @@ ul, li {
   margin-bottom: 15px;
   font-weight: 500;
 }
-.skills li a {
+.services li a {
   text-decoration: none;
 }
-.skills li a:hover {
-  background: blueviolet;
+.services li a:hover {
+  background: #0488f3;
   color: white;
 }
 
-.skills li:hover {
-  background: blueviolet;
+.services li:hover {
+  background: #0488f3;
 }
 
 .container p {
   text-align: center;
 }
 
-.skillsIcons {
+.servicesIcons {
   margin: 3rem;
   display: flex;
   justify-content: center;
 }
 
-.skillsIcons i {
-  margin: 1rem;
+.servicesIcons i {
+  margin: 0.5rem;
   font-size: 3rem;
-  color: #1a0024;
+  color: #3C738C;
 }
 
 /* Fonts */
 /*Font Sizes */
 /* Colors */
-.downloadCV {
-  display: flex;
-  justify-content: center;
-}
-.downloadCV h2,
-.downloadCV p {
-  text-align: center;
-  padding: 1rem;
-}
-
-.button {
-  background-color: #d5004a;
-  color: white;
-  font-size: 1rem;
-  justify-items: center;
-  border: none;
-  border-radius: 1rem;
-  padding: 1rem;
-  text-decoration: none;
-}
-.button:hover {
-  background-color: #d5004a;
-  color: white;
-}
-
-/* Fonts */
-/*Font Sizes */
-/* Colors */
+/*Images */
 .footer {
-  background: black;
+  background: #000d13;
   color: white;
   padding: 5%;
 }
@@ -288,10 +236,11 @@ ul, li {
 /* Fonts */
 /*Font Sizes */
 /* Colors */
+/*Images */
 .contact {
-  background: #1a0024;
+  background: #3C738C;
   color: white;
-  padding: 1rem;
+  padding: 3rem;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -330,8 +279,8 @@ ul, li {
 .contactIcons li {
   border-radius: 100%;
   color: white;
-  width: 2rem;
-  height: 2rem;
+  width: 2.1rem;
+  height: 2.1rem;
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -339,20 +288,21 @@ ul, li {
   font-size: 1.2rem;
 }
 .contactIcons li:hover {
-  background-color: #d5004a;
+  background-color: #134b64;
   color: white;
 }
 
 /* Fonts */
 /*Font Sizes */
 /* Colors */
+/*Images */
 .postContent {
   padding: 2rem;
   background: white;
 }
 
 .titleContent {
-  color: #1a0024;
+  color: #3C738C;
   margin-bottom: 2rem;
 }
 
@@ -363,7 +313,7 @@ ul, li {
 
 .backButton a {
   margin-top: 2rem;
-  color: blueviolet;
+  color: #0488f3;
   font-weight: 600;
   text-decoration: none;
   text-transform: capitalize;
@@ -371,11 +321,11 @@ ul, li {
 
 * {
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #242424;
@@ -383,7 +333,7 @@ body {
 }
 
 a, a:hover, a:focus {
-  color: blueviolet;
+  color: #0488f3;
 }
 
 h2 {
@@ -395,7 +345,7 @@ h2 {
 }
 
 .container {
-  margin: 3rem;
+  margin: 1.8rem;
   display: flex;
   flex-direction: column;
 }
@@ -403,7 +353,7 @@ h2 {
 @media screen and (max-width: 768px) {
   .header {
     z-index: 5;
-    background-color: #1a0024;
+    background-color: #3C738C;
     padding: 1rem;
     display: flex;
     justify-content: space-around;
@@ -553,6 +503,7 @@ h2 {
   }
 }
 .headerMenuMobile-active {
+  background-color: #000d13;
   color: white;
   transform: translateX(0%);
   height: 30vh;

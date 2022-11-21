@@ -1,15 +1,16 @@
 @import "variables";
 
-.skills {
+.services {
 	background-color: $backgroundLight;
-	padding: 1rem;
+	padding: 0.5rem;
+	padding-top: 0.5rem;
 	h2{
 	display: flex; 
 	justify-content: center;
  }
 }
 
-.skills li{ 
+.services li{ 
 	display: inline-block; 
 	color: $textMedium; 
 	font-size: 16px; 
@@ -29,7 +30,7 @@
 	}
 }
 
-.skills li:hover {
+.services li:hover {
 	background: $highlight; 
 }
 
@@ -37,13 +38,13 @@
 	text-align: center;
 }
 
-.skillsIcons {
+.servicesIcons {
 	margin:3rem; 
 	display: flex; 
 	justify-content: center;
 }
-.skillsIcons i {
-	margin:1rem; 
+.servicesIcons i {
+	margin:0.5rem; 
 	font-size: 3rem; 
 	color:$textDark;
 }

@@ -1,18 +1,17 @@
 /*
-Theme Name: Resume Online Theme
+Theme Name: Dentist Clinic Theme
 Version: 1.0
-Description: Lorem Ipsum
+Description: Dentist clinic theme
 Tags:
 Author: Sarah Siqueira
 Author URI:https://sarahcssiqueira.ga/
 */
 
-@import "./styles/timeline";
 @import "./styles/header";
 @import "./styles/variables";
 @import "./styles/banner";
-@import "./styles/skills";
-@import "./styles/download";
+@import "./styles/heading";
+@import "./styles/services";
 @import "./styles/footer";
 @import "./styles/contact";
 @import "./styles/posts";
@@ -30,7 +29,7 @@ body {
 	font-size:0.9rem;
 }
 a,a:hover,a:focus {
-	color:blueviolet;
+	color:$highlight
 }
 
 h2{
@@ -42,7 +41,7 @@ h2{
 }
 
 .container {
-	margin:3rem;
+	margin:1.8rem;
 	display: flex;
 	flex-direction: column;
 }
@@ -51,7 +50,7 @@ h2{
 	
 .header{
 	z-index: 5;
-	background-color: #1a0024; 
+	background-color: $background; 
 	padding: 1rem;
 	display: flex;
 	justify-content: space-around; 
@@ -61,7 +60,7 @@ h2{
 .headerTitle{
 	text-transform:capitalize; 
 	font-size: 1.2rem; 
-	color: white;
+	color: $textLight
 }
 
 .headerTitle a{
@@ -225,6 +224,7 @@ body {
 }
 
 .headerMenuMobile-active {
+	background-color: $backgroundDark;
 	color:$textLight;
 	transform: translateX(0%);
 	height: 30vh;

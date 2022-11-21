@@ -19,7 +19,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <header class="header">
@@ -48,9 +48,35 @@
             <!-- Hard Coded, in the future for a better user experience, create widgets -->
 
         <div class="headerIcons">
-            <li><a href="mailto:sarahcosiqueira@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-            <li><a href="https://linkedin.com/in/sarahcssiqueira/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-            <li><a href="https://github.com/sarahcssiqueira" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+        <li>
+        <a href="" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="" target="_blank">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="" target="_blank">
+          <i class="fa-brands fa-facebook"></i>
+        </a>
+      </li>
+
+      <li>
+          <a href="mailto:" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+          </a>
+      </li>
         </div>
             
 

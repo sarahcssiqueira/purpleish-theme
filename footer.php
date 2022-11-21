@@ -11,7 +11,7 @@
 
 <footer class="footer">
   <span>
-      Resume Online Theme.
+      Dentist Clinic Theme by: 
       <a href="https://sarahcssiqueira.ga/">Sarah Siqueira.</a> 
   </span>
   <span class="copyright">© 2022 All rights reserved.</span>

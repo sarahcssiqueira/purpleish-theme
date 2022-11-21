@@ -8,13 +8,13 @@
 
 ?>
 
-<div class="banner">
+<div class="heading">
       <div class="container">      
             <section>
               <h1>
+                <?php echo get_bloginfo('description'); ?>
               </h1>
             </section>
-          
-       
+
       </div>
 </div>
