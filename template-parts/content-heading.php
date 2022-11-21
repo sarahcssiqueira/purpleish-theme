@@ -9,7 +9,7 @@
 ?>
 
 <div class="heading">
-      <div class="container">      
+      <div class="heading">      
             <section>
               <h1>
                 <?php echo get_bloginfo('description'); ?>
