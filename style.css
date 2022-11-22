@@ -1,6 +1,6 @@
 /*
 Theme Name: Dentist Clinic Theme
-Version: 1.0.1
+Version: 1.0 Beta
 Description: A theme made for dentist clinics
 Author: Sarah Siqueira
 Author URI:https://sarahcssiqueira.ga/
@@ -60,6 +60,9 @@ Author URI:https://sarahcssiqueira.ga/
   font-size: 1rem;
   text-decoration: none;
   color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .headerMenuMobile i {
@@ -77,13 +80,13 @@ Author URI:https://sarahcssiqueira.ga/
 .headerIcons a {
   border-radius: 100%;
   color: white;
-  font-size: 1.2rem;
   width: 2rem;
   height: 2rem;
   text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 1.2rem;
 }
 
 .headerIcons li a:hover {
