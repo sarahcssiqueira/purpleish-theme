@@ -1,42 +1,55 @@
 /*
 Theme Name: Dentist Clinic Theme
 Version: 1.0.1
-Description: Dentist clinic theme
+Description: A theme made for dentist clinics
 Author: Sarah Siqueira
 Author URI:https://sarahcssiqueira.ga/
 */
 
-@import "./styles/variables";
-@import "./styles/header";
-@import "./styles/banner";
-@import "./styles/heading";
-@import "./styles/services";
-@import "./styles/footer";
-@import "./styles/contact";
-@import "./styles/posts";
+/*--------------------------------------------------------------------------------------------------------
+* Imports
+---------------------------------------------------------------------------------------------------------*/
+
+@import "./styles/variables", "./styles/header", "./styles/banner" ,"./styles/heading", "./styles/services",
+"./styles/footer", "./styles/contact", "./styles/posts";
+
+
+/*--------------------------------------------------------------------------------------------------------
+* Global
+---------------------------------------------------------------------------------------------------------*/
 
 * {
 	margin:0;
-	font-family: $fontPrimary;
 }
 
 body {
 	font-family:  $fontPrimary;
 	font-weight:400;
 	font-style: normal; 
-	color:#242424; 
+	color:$textMedium; 
 	font-size:0.9rem;
 }
-a,a:hover,a:focus {
-	color:$highlight
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $fontPrimary;
+	color:$textDark;
 }
 
-h2{
+h2 {
 	display: inline-block; 
 	font-weight: 2rem; 
 	font-size: 1.2rem;  
 	text-transform: capitalize;
 	margin-bottom: 1rem;
+}
+
+a {
+	color:$highlight;
 }
 
 .container {
@@ -45,50 +58,18 @@ h2{
 	flex-direction: column;
 }
 
+
+/*--------------------------------------------------------------------------------------------------------
+* Breakpoints
+---------------------------------------------------------------------------------------------------------*/
+
 @media screen and (max-width:768px) {
-	
-.header{
-	z-index: 5;
-	background-color: $background; 
-	padding: 1rem;
-	display: flex;
-	justify-content: space-around; 
-	align-items: center;
-}
-
-.headerTitle{
-	text-transform:capitalize; 
-	font-size: 1.2rem; 
-	color: $textLight
-}
-
-.headerTitle a{
-	text-transform:capitalize; 
-	font-size: 1.2rem;
-	color: white; 
-	text-decoration: none;
-}
-
-.headerTitle a:hover{
-	text-transform:capitalize; 
-	font-size: 1.2rem;
-	color: white; 
-	background-color: $highlight;
-}
-
-.headerMenu{
-	list-style-type: none; 
-	display: flex; 
-	justify-content: space-around;
-	width: 40%;
-}
 
 .headerMenuLinks {
 	list-style-type: none; 
 	display: flex; 
 	flex-direction: column; 
 	justify-content: space-around;
-	width: 40%;
 }
 
 .headerMenu a{
@@ -125,8 +106,8 @@ h2{
 }
 
 .headerIcons li a:hover{ 
-	background-color:blueviolet; 
-	color: white; 
+	background-color:$textDark; 
+	color: $textLight; 
 }
 
 .headerMenu {
@@ -159,47 +140,6 @@ h2{
 body {
 	overflow-x: hidden;
 }
-
-.banner {
-	background-color: #1a0024; 
-	padding: 1.2rem; 
-	text-align: center;
-}
-
-.banner section h1{ 
-	font-weight: 400; 
-	font-size: 1.6rem; 
-	line-height: 2rem; 
-	color:#ffffff; 
-	padding: 1.5rem; 
-	text-align: center;
-}
-
-.banner section span {
-	color:white;display: flex;
-	justify-content: center; 
-	font-size: 1rem;
-}
-
-.bannerInfo {
-	color:white; 
-	display: flex;
-	flex-direction: column;  
-	justify-content: center; 
-	padding: 0.8rem;
-}
-.servicesIcons {
-	margin: 2rem; 
-	display: flex; 
-	justify-content: center;
-}
-
-.servicesIcons i {
-	margin:0.5rem; 
-	font-size: 2rem; 
-	color:#1a0024;
-}
-	
 }
 
 .headerMenuMobile-active {
