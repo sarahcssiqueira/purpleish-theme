@@ -17,4 +17,7 @@
   <span class="copyright">© 2022 All rights reserved.</span>
 </footer>
 
+
 <?php wp_footer();?>
+
+</body>

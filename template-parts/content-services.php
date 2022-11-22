@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="services" id="services">
+<div class="services">
         <div class="container">
 
             <div class="servicesIcons">

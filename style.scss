@@ -1,14 +1,13 @@
 /*
 Theme Name: Dentist Clinic Theme
-Version: 1.0
+Version: 1.0.1
 Description: Dentist clinic theme
-Tags:
 Author: Sarah Siqueira
 Author URI:https://sarahcssiqueira.ga/
 */
 
-@import "./styles/header";
 @import "./styles/variables";
+@import "./styles/header";
 @import "./styles/banner";
 @import "./styles/heading";
 @import "./styles/services";
@@ -74,7 +73,7 @@ h2{
 	text-transform:capitalize; 
 	font-size: 1.2rem;
 	color: white; 
-	background-color: blueviolet;
+	background-color: $highlight;
 }
 
 .headerMenu{
@@ -189,33 +188,13 @@ body {
 	justify-content: center; 
 	padding: 0.8rem;
 }
-
-.bannerInfo li {
-	list-style-type: none; 
-	display: flex;
-	flex-direction: column; 
-	justify-content: center; 
-	padding: 0.8rem;
-	font-size: 0.9rem;
-}
-
-.bannerInfo i {
-	color:#d5004a; 
-	list-style-type: none; 
-	display: flex; 
-	flex-direction: column; 
-	justify-content: center; 
-	padding: 0.8rem; 
-	font-size: 1.5rem;
-}
-
-.skillsIcons {
+.servicesIcons {
 	margin: 2rem; 
 	display: flex; 
 	justify-content: center;
 }
 
-.skillsIcons i {
+.servicesIcons i {
 	margin:0.5rem; 
 	font-size: 2rem; 
 	color:#1a0024;

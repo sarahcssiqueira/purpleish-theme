@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying banner section.
+ * Template part for displaying a banner section.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -14,7 +14,6 @@
               <h1>
               </h1>
             </section>
-          
-       
+              
       </div>
 </div>

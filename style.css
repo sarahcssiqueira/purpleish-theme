@@ -1,11 +1,14 @@
 /*
 Theme Name: Dentist Clinic Theme
-Version: 1.0
+Version: 1.0.1
 Description: Dentist clinic theme
-Tags:
 Author: Sarah Siqueira
 Author URI:https://sarahcssiqueira.ga/
 */
+/* Fonts */
+/*Font Sizes */
+/* Colors */
+/*Images */
 /* Fonts */
 /*Font Sizes */
 /* Colors */
@@ -34,18 +37,12 @@ Author URI:https://sarahcssiqueira.ga/
   text-transform: capitalize;
   font-size: 1.2rem;
   color: white;
-  background-color: #0488f3;
 }
 
 .headerMenu {
   display: flex;
   justify-content: space-around;
   width: 40%;
-}
-.headerMenu a {
-  font-size: 1rem;
-  text-decoration: none;
-  color: white;
 }
 
 .headerMenuLinks {
@@ -55,12 +52,11 @@ Author URI:https://sarahcssiqueira.ga/
   justify-content: space-around;
   width: 40%;
 }
-
-.headerMenuLinks li {
+.headerMenuLinks li,
+.headerMenuLinks a {
+  font-size: 1rem;
+  text-decoration: none;
   color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
 }
 
 .headerMenuMobile i {
@@ -96,10 +92,6 @@ Author URI:https://sarahcssiqueira.ga/
 /*Font Sizes */
 /* Colors */
 /*Images */
-/* Fonts */
-/*Font Sizes */
-/* Colors */
-/*Images */
 .banner {
   background-color: #3C738C;
   background-image: url("https://cdn.pixabay.com/photo/2021/08/10/13/43/orthodontics-6536026_960_720.jpg");
@@ -111,38 +103,9 @@ Author URI:https://sarahcssiqueira.ga/
 .banner section h1 {
   font-weight: 400;
   font-size: 3rem;
-  line-height: 3rem;
+  line-height: 2rem;
   color: #ffffff;
   padding: 2rem;
-}
-
-.banner section span {
-  color: white;
-  letter-spacing: 0.1rem;
-  font-weight: 400;
-  font-size: 1rem;
-  padding: 2rem;
-}
-
-.bannerInfo {
-  color: white;
-  display: flex;
-  flex: row;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.bannerInfo li {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.bannerInfo i {
-  padding: 0.2rem;
-  font-size: 0.9rem;
-  color: #134b64;
 }
 
 /* Fonts */
@@ -374,7 +337,7 @@ h2 {
     text-transform: capitalize;
     font-size: 1.2rem;
     color: white;
-    background-color: blueviolet;
+    background-color: #0488f3;
   }
   .headerMenu {
     list-style-type: none;
@@ -474,29 +437,12 @@ h2 {
     justify-content: center;
     padding: 0.8rem;
   }
-  .bannerInfo li {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.8rem;
-    font-size: 0.9rem;
-  }
-  .bannerInfo i {
-    color: #d5004a;
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0.8rem;
-    font-size: 1.5rem;
-  }
-  .skillsIcons {
+  .servicesIcons {
     margin: 2rem;
     display: flex;
     justify-content: center;
   }
-  .skillsIcons i {
+  .servicesIcons i {
     margin: 0.5rem;
     font-size: 2rem;
     color: #1a0024;

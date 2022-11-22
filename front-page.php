@@ -24,6 +24,8 @@
 
                     get_template_part( 'template-parts/content' , 'services' );
 
+					/* get_template_part( 'template-parts/content' , 'grid' );*/
+
                     get_template_part( 'template-parts/content' , 'contact' );
 					
 				}
