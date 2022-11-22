@@ -6,31 +6,20 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  */
-?>
-
-<?php get_header();?>
+?><?php get_header();?>
 
 	<div class="content">
 
-		<?php if ( have_posts () ) {
+		<?php get_template_part( 'template-parts/content' , 'banner' ); ?>
 
-				while ( have_posts ()) {
+		<?php get_template_part( 'template-parts/content' , 'heading' ); ?>
 
-					the_post();
+        <?php get_template_part( 'template-parts/content' , 'services' ); ?>
+
+		<?php /* get_template_part( 'template-parts/content' , 'grid' );*/ ?>
+
+        <?php get_template_part( 'template-parts/content' , 'contact' ); ?>
 					
-					get_template_part( 'template-parts/content' , 'banner' );
-
-					get_template_part( 'template-parts/content' , 'heading' );
-
-                    get_template_part( 'template-parts/content' , 'services' );
-
-					/* get_template_part( 'template-parts/content' , 'grid' );*/
-
-                    get_template_part( 'template-parts/content' , 'contact' );
-					
-				}
-			};?>
-
 		</div>
 
 <?php get_footer();?>
