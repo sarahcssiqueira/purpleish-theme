@@ -1,15 +1,13 @@
 <?php
 /**
- * The template for displaying single custom posts:Services.
+ * The template for displaying single custom posts Services.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
  */
-?>
+?><?php get_header();?>
 
-<?php get_header();?>
-
-	<div class="postContent">
+	<div class="containerLight">
 
 			<?php if ( have_posts () ) {
 
@@ -17,7 +15,7 @@
 					
 					the_post();
 					
-					get_template_part( 'template-parts/content' , 'single-services' );
+					get_template_part( 'template-parts/content' , 'services' );
 					
 				}
 			};?>

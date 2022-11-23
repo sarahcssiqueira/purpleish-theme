@@ -1,15 +1,3 @@
-@import "variables";
-
-.services {
-	background-color: $backgroundLight;
-	padding: 0.5rem;
-	padding-top: 0.5rem;
-	h2{
-	display: flex; 
-	justify-content: center;
- }
-}
-
 .services li{ 
 	display: inline-block; 
 	color: $textMedium; 
@@ -21,30 +9,14 @@
 	margin-right: 15px; 
 	margin-bottom: 15px; 
 	font-weight: 500;
-	a{
+	&:hover {
+		background: $highlight; 
+	}
+	a {
 		text-decoration: none;
 	}
 	& a:hover {
 		background: $highlight; 
 		color:$textLight;
 	}
-}
-
-.services li:hover {
-	background: $highlight; 
-}
-
-.container p {
-	text-align: center;
-}
-
-.servicesIcons {
-	margin:3rem; 
-	display: flex; 
-	justify-content: center;
-}
-.servicesIcons i {
-	margin:0.5rem; 
-	font-size: 3rem; 
-	color:$textDark;
 }

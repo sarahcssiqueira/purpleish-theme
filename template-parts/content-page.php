@@ -5,26 +5,28 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
  */
-
 ?>
-
-<div class="postContent">
+<div class="innerSectionLarge">
 
     <div class="titleContent"> 
         <h2> 
-			<a href="
-				<?php the_permalink();?>">
-				<?php the_title(); ?>
-			</a> 
-		<h2>
+            <a href="
+                <?php the_permalink();?>">
+                 <?php the_title(); ?>
+            </a> 
+        <h2>
+    </div>
+    
+    <div class="textContent"> 
+        <p> <?php the_content();?> </p>
     </div>
 
-	<span class="date">
-		<?php the_date();?>
-	</span>
-
-	<div class="textContent">
-			<?php the_excerpt(); ?>
+    <div class="backButton">
+        <a href="<?php echo get_home_url(); ?>">
+              Back Home
+        </a>
     </div>
 
+    <!--No comments on this project -->
+    
 </div>

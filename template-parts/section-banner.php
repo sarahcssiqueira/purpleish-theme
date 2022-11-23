@@ -7,13 +7,11 @@
  */
 
 ?>
-
 <div class="banner">
-      <div class="container">      
+      <div class="innerSectionLarge">      
             <section>
               <h1>
               </h1>
             </section>
-              
       </div>
 </div>

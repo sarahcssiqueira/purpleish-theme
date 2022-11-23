@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying services section.
+ * Template part for displaying custom post types: Skills.
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -8,45 +8,22 @@
 
 ?>
 
-<div class="services">
-        <div class="container">
+<div class="innerSectionLarge">
 
-            <div class="servicesIcons">
-                <i class="fa-solid fa-tooth"></i>
-            </div>
-
-            <h2>Our Services</h2>
-            <p>Personalized Care</p>
-            <br>
-            
-
-              <div class="servicesList">
-                <ul class="services">
-                
-                  <?php $args = array(
-                    'post_type' =>'services',
-                    'posts_per_page'=>-1, );
-
-                    $post_data = new WP_Query($args);
-
-
-                  if ( $post_data-> have_posts () ) {
-                      while ( $post_data-> have_posts () ) {
-
-                      $post_data->the_post (); ?>
-
-                      <li> 
-                        <a href="<?php the_permalink();?>">
-                        <?php echo get_the_title();?>
-                        </a>
-                      </li>
-
-                    <?php
-                    }
-                  }; ?>
+    <div class="titleContent"> 
+        <h2> 
+			<?php the_title(); ?>
+		<h2>
+    </div>
     
-                </ul>
-              </div>
+    <div class="textContent"> 
+        <p><?php the_content();?></p>
+    </div>
 
-        </div>
-      </div>
+    <div class="buttonDark">
+        <a href="<?php echo get_home_url(); ?>">
+        Back
+        </a>
+    </div>
+
+</div>

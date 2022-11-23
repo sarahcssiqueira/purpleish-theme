@@ -10,7 +10,8 @@
 
 
 
-<div class="postContent">
+<div class="container
+">
 
     <div class="titleContent"> 
         <h2> 

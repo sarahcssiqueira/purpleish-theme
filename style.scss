@@ -1,6 +1,6 @@
 /*
 Theme Name: Dentist Clinic Theme
-Version: 1.0 Beta
+Version: 1.0.1 Beta
 Description: A theme made for dentist clinics
 Author: Sarah Siqueira
 Author URI:https://sarahcssiqueira.ga/
@@ -10,8 +10,8 @@ Author URI:https://sarahcssiqueira.ga/
 * Imports
 ---------------------------------------------------------------------------------------------------------*/
 
-@import "./styles/variables", "./styles/header", "./styles/banner" ,"./styles/heading", "./styles/services",
-"./styles/footer", "./styles/contact", "./styles/posts";
+@import "./styles/variables", "./styles/header", "./styles/banner" ,"./styles/containers", "./styles/inner-sections",
+ "./styles/icons", "./styles/services","./styles/footer", "./styles/content";
 
 
 /*--------------------------------------------------------------------------------------------------------
@@ -52,14 +52,16 @@ a {
 	color:$highlight;
 }
 
-.container {
-	margin:1.8rem;
-	display: flex;
-	flex-direction: column;
-}
 
+/* Divider */
 
-/*--------------------------------------------------------------------------------------------------------
+.divider hr {
+	border-top: 2px solid $backgroundLight;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+  }
+
+  /*--------------------------------------------------------------------------------------------------------
 * Breakpoints
 ---------------------------------------------------------------------------------------------------------*/
 

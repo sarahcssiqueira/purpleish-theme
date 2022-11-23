@@ -10,15 +10,15 @@
 
 	<div class="content">
 
-		<?php get_template_part( 'template-parts/content' , 'banner' ); ?>
+		<?php get_template_part( 'template-parts/section' , 'banner' ); ?>
 
-		<?php get_template_part( 'template-parts/content' , 'heading' ); ?>
+		<?php get_template_part( 'template-parts/section' , 'heading' ); ?>
 
-        <?php get_template_part( 'template-parts/content' , 'services' ); ?>
+        <?php get_template_part( 'template-parts/section' , 'services' ); ?>
 
-		<?php /* get_template_part( 'template-parts/content' , 'grid' );*/ ?>
+		<?php get_template_part( 'template-parts/section' , 'blog' ); ?>
 
-        <?php get_template_part( 'template-parts/content' , 'contact' ); ?>
+        <?php get_template_part( 'template-parts/section' , 'contact' ); ?>
 					
 		</div>
 

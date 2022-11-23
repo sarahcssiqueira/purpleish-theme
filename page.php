@@ -14,7 +14,7 @@
 
 <?php get_header();?>
 
-<div class="postContent">
+<div class="containerLight">
 
 		<?php if ( have_posts () ) {
 
@@ -27,6 +27,6 @@
 				}
 			};?>
 
-        </div>
+</div>
 
 <?php get_footer();?>

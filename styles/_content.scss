@@ -1,22 +1,17 @@
-@import "variables";
-
-.postContent {
-    padding:2rem;
-    background: $backgroundLight;
-}
-
 .titleContent {
     color:$textDark;
     margin-bottom: 2rem;
+    text-align:justify;
 }
 
-.textContent {
+.textContent p {
     color: $textMedium;
+    font-size: $fontMedium;
     margin-bottom: 2rem;
+    text-align:justify;
 }
 
-.backButton a { 
-    margin-top:2rem;
+.buttonDark a { 
     color:$highlight;
     font-weight: 600;
     text-decoration: none;

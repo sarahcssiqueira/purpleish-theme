@@ -1,6 +1,6 @@
 /*
 Theme Name: Dentist Clinic Theme
-Version: 1.0 Beta
+Version: 1.0.1 Beta
 Description: A theme made for dentist clinics
 Author: Sarah Siqueira
 Author URI:https://sarahcssiqueira.ga/
@@ -94,10 +94,6 @@ Author URI:https://sarahcssiqueira.ga/
   color: white;
 }
 
-/* Fonts */
-/*Font Sizes */
-/* Colors */
-/*Images */
 .banner {
   background-color: #3C738C;
   background-image: url("https://cdn.pixabay.com/photo/2021/08/10/13/43/orthodontics-6536026_960_720.jpg");
@@ -105,27 +101,32 @@ Author URI:https://sarahcssiqueira.ga/
   padding: 5rem;
   text-align: center;
 }
-
 .banner section h1 {
   font-weight: 400;
   font-size: 3rem;
   line-height: 2rem;
-  color: #ffffff;
+  color: white;
   padding: 2rem;
 }
 
-/* Fonts */
-/*Font Sizes */
-/* Colors */
-/*Images */
-.heading {
+.containerLight {
+  background-color: white;
+}
+.containerLight h2 {
+  display: flex;
+  justify-content: center;
+}
+.containerLight p {
+  text-align: center;
+}
+
+.containerDark {
   background-color: #3C738C;
   padding: 1.2rem;
   text-align: center;
   line-height: 3rem;
 }
-
-.heading section h1 {
+.containerDark section h1 {
   font-weight: 500;
   font-size: 2.2rem;
   line-height: 5rem;
@@ -133,18 +134,55 @@ Author URI:https://sarahcssiqueira.ga/
   padding: 1.5rem;
 }
 
-/* Fonts */
-/*Font Sizes */
-/* Colors */
-/*Images */
-.services {
-  background-color: white;
-  padding: 0.5rem;
-  padding-top: 0.5rem;
+.containerDark h2 {
+  color: white;
 }
-.services h2 {
+
+.containerDark p {
+  color: white;
+}
+
+.innerSectionSmall {
+  padding: 0.5rem;
+}
+
+.innerSectionLarge {
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.iconsDark {
   display: flex;
   justify-content: center;
+}
+.iconsDark i {
+  margin: 1rem;
+  font-size: 3rem;
+  color: #3C738C;
+}
+
+.socialIcons {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.socialIcons li,
+.socialIcons a {
+  border-radius: 100%;
+  color: white;
+  width: 2rem;
+  height: 2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.socialIcons li a:hover {
+  background-color: #134b64;
+  color: white;
 }
 
 .services li {
@@ -159,32 +197,15 @@ Author URI:https://sarahcssiqueira.ga/
   margin-bottom: 15px;
   font-weight: 500;
 }
+.services li:hover {
+  background: #0488f3;
+}
 .services li a {
   text-decoration: none;
 }
 .services li a:hover {
   background: #0488f3;
   color: white;
-}
-
-.services li:hover {
-  background: #0488f3;
-}
-
-.container p {
-  text-align: center;
-}
-
-.servicesIcons {
-  margin: 3rem;
-  display: flex;
-  justify-content: center;
-}
-
-.servicesIcons i {
-  margin: 0.5rem;
-  font-size: 3rem;
-  color: #3C738C;
 }
 
 /* Fonts */
@@ -202,87 +223,20 @@ Author URI:https://sarahcssiqueira.ga/
   text-align: center;
 }
 
-/* Fonts */
-/*Font Sizes */
-/* Colors */
-/*Images */
-.contact {
-  background: #3C738C;
-  color: white;
-  padding: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.contact h2 {
-  font-size: 1.3rem;
-  color: white;
-}
-.contact p,
-.contact i {
-  text-align: center;
-  padding: 1rem;
-}
-.contact i:hover {
-  color: white;
-}
-
-.contactIcons {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-.contactIcons a {
-  border-radius: 100%;
-  color: white;
-  width: 2rem;
-  height: 2rem;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-}
-
-.contactIcons li {
-  border-radius: 100%;
-  color: white;
-  width: 2.1rem;
-  height: 2.1rem;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-}
-.contactIcons li:hover {
-  background-color: #134b64;
-  color: white;
-}
-
-/* Fonts */
-/*Font Sizes */
-/* Colors */
-/*Images */
-.postContent {
-  padding: 2rem;
-  background: white;
-}
-
 .titleContent {
   color: #3C738C;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
-.textContent {
+.textContent p {
   color: #181818;
+  font-size: 1rem;
   margin-bottom: 2rem;
+  text-align: justify;
 }
 
-.backButton a {
-  margin-top: 2rem;
+.buttonDark a {
   color: #0488f3;
   font-weight: 600;
   text-decoration: none;
@@ -326,10 +280,11 @@ a {
   color: #0488f3;
 }
 
-.container {
-  margin: 1.8rem;
-  display: flex;
-  flex-direction: column;
+/* Divider */
+.divider hr {
+  border-top: 2px solid white;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 /*--------------------------------------------------------------------------------------------------------

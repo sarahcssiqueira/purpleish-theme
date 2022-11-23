@@ -1,7 +1,7 @@
 <?php
 /**
  * Resume theme functions and definitions
- * Functions prefix => rt
+ * Functions prefix => dt
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -12,11 +12,11 @@
 
 function dt_register_styles() {
         
-        $version = wp_get_theme()->get( 'Version' );
+        $version = wp_get_theme()->get ( 'Version' );
     
-        wp_enqueue_style('dtheme_sytle' , get_template_directory_uri() . "/style.css" , array( 'dtheme_sytle_jquery' ), $version,'all');
-        wp_enqueue_style('dtheme_sytle_font-awesome' , "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css", array(), '6.2.0','all');
-        wp_enqueue_style('dtheme_sytle_jquery' , "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js", array(), '6.2.0','all');
+        wp_enqueue_style( 'dtheme_sytle' , get_template_directory_uri() . "/style.css" , array( 'dtheme_sytle_jquery' ), $version,'all');
+        wp_enqueue_style(' dtheme_sytle_font-awesome' , "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css", array(), '6.2.0','all');
+        wp_enqueue_style( 'dtheme_sytle_jquery' , "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js", array(), '6.2.0','all');
     
     }
     
@@ -60,7 +60,9 @@ add_action ( 'init' , 'dt_menus' );
 
 /* Register Custom Post Type */
 
+/* Services */
 
+add_action( 'init' , 'dt_new_post_type_services' );
 function dt_new_post_type_services() {
     $supports = array(
         'title',
@@ -102,4 +104,47 @@ function dt_new_post_type_services() {
     };
 
 
-add_action( 'init' , 'dt_new_post_type_services' );
+
+    /* Team Members: Supports Custom Fields */
+
+add_action( 'init' , 'dt_new_post_type_team_members' );
+function dt_new_post_type_team_members () {
+    $supports = array(
+        'title',
+        'editor',
+        'author', 
+        'thumbnail',
+        'custom-fields' ,
+        'excerpt', 
+        'revisions', 
+        'post-formats', 
+        );
+
+    $labels = array(
+        'name' => _x('Team Member', 'plural'),
+        'singular_name' => _x('Team Member', 'singular'),
+        'menu_name' => _x('Team Members', 'admin menu'),
+        'name_admin_bar' => _x('Team Members', 'admin bar'),
+        'add_new' => _x('Add Team Member', 'add new team member'),
+        'add_new_item' => __('Add New Team Member'),
+        'new_item' => __('New Team Member', 'New Team Member'),
+        'edit_item' => __( 'Edit Team Member' ),
+        'view_item' => __( 'View Team Member' ),
+        'all_items' => __('All Team Member'),
+        'search_items' => __('Search Team Member'),
+        'not_found' => __('No Team Member found.'),
+        );
+        
+        $args = array(
+        'supports' => $supports,
+        'labels' => $labels,
+        'public' => true,
+        'query_var' => true,
+        'rewrite' => array('slug' => 'team-member'),
+        'has_archive' => true,
+        'hierarchical' => false,
+        );
+
+    
+    register_post_type('teammembers', $args);
+    };

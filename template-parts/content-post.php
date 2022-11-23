@@ -8,7 +8,7 @@
 
 ?>
 
-<div class="postContent">
+<div class="innerSectionLarge">
 
     <div class="titleContent"> 
         <h2> 
