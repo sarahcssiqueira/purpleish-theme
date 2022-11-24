@@ -7,11 +7,7 @@
  */
 
 ?>
-
-
-
-<div class="container
-">
+<div class="innerSectionLarge">
 
     <div class="titleContent"> 
         <h2> 

@@ -48,7 +48,7 @@
           </div>
 
           <!-- Hard Coded, in the future for a better user experience, create widgets -->
-          <div class="headerIcons">
+          <div class="socialIcons">
             <li>
               <a href="" target="_blank">
                 <i class="fa-brands fa-whatsapp"></i>
