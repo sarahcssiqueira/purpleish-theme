@@ -10,9 +10,9 @@
 ?><footer class="footer">
   <span>
       Dentist Clinic Theme by: 
-      <a href="https://sarahcssiqueira.ga/">Sarah Siqueira.</a> 
+      <a href="https://sarahjobs.com/">Sarah Siqueira.</a> 
   </span>
-  <span class="copyright">© 2022 All rights reserved.</span>
+  <span class="copyright">© <?php  echo date( "Y" )?> All rights reserved.</span>
 </footer>
 <?php wp_footer();?>
 </body>

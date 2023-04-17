@@ -14,7 +14,7 @@
 <head>
     <title><?php echo get_bloginfo('name'); ?></title>
 	  <?php wp_head();?>
-    <!--Provide a appropriante icon -->
+    <!--Provide a appropriate icon -->
     <link rel="icon" type="" href=""/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
