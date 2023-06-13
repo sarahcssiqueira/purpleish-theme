@@ -2,8 +2,10 @@
 * Theme Name:        Dentist Clinic Theme
 * Theme URI:         https://sarahjobs.com/wordpress/themes/dentist-clinic-theme
 * Description:       A theme made for dentist clinics projects
+* Tags:              one-column
 * Version:           1.0.0
 * Requires at least: 4.7
+* Tested up to:      5.9
 * Requires PHP:      7.4
 * Author:            Sarah Siqueira
 * Author URI:        https://sarahjobs.com/about
@@ -18,9 +20,8 @@
 * Imports
 ---------------------------------------------------------------------------------------------------------*/
 
-@import "./styles/variables", "./styles/header", "./styles/banner" ,"./styles/containers", "./styles/inner-sections",
- "./styles/icons", "./styles/services","./styles/footer", "./styles/content";
-
+@import "./assets/src/scss/variables", "./assets/src/scss/header", "./assets/src/scss/banner" ,"./assets/src/scss/containers", "./assets/src/scss/inner-sections",
+ "./assets/src/scss/icons", "./assets/src/scss/services","./assets/src/scss/footer", "./assets/src/scss/content";
 
 /*--------------------------------------------------------------------------------------------------------
 * Global

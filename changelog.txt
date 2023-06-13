@@ -1,4 +1,0 @@
-# CHANGELOG
-
-23-11-2022 - Version: 1.0.1 Beta - Added blog secion on homepage, some CSS rewriting (more general and reusable classes), some file names changed.
-20-11-2022 - Version: 1.0.0 Beta - Initial idea of the theme
