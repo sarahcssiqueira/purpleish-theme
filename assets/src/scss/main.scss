@@ -3,22 +3,22 @@
 ---------------------------------------------------------------------------------------------------------*/
 
 @import "./variables", "./header", "./banner" ,"./containers", "./inner-sections",
- "./icons", "./services","./footer", "content";
+	"./icons", "./services","./footer", "content";
 
- /*--------------------------------------------------------------------------------------------------------
+/*--------------------------------------------------------------------------------------------------------
 * Global
 ---------------------------------------------------------------------------------------------------------*/
 
 * {
-	margin:0;
+	margin: 0;
 }
 
 body {
-	font-family:  $fontPrimary;
-	font-weight:400;
-	font-style: normal; 
-	color:$textMedium; 
-	font-size:0.9rem;
+	font-family: $fontPrimary;
+	font-weight: 400;
+	font-style: normal;
+	color: $textMedium;
+	font-size: 0.9rem;
 }
 
 h1,
@@ -28,21 +28,20 @@ h4,
 h5,
 h6 {
 	font-family: $fontPrimary;
-	color:$textDark;
+	color: $textDark;
 }
 
 h2 {
-	display: inline-block; 
-	font-weight: 2rem; 
-	font-size: 1.2rem;  
+	display: inline-block;
+	font-weight: 2rem;
+	font-size: 1.2rem;
 	text-transform: capitalize;
 	margin-bottom: 1rem;
 }
 
 a {
-	color:$highlight;
+	color: $highlight;
 }
-
 
 /* Divider */
 
@@ -50,109 +49,108 @@ a {
 	border-top: 2px solid $backgroundLight;
 	margin-top: 1rem;
 	margin-bottom: 2rem;
-  }
-
+}
 
 /*--------------------------------------------------------------------------------------------------------
 * Breakpoints
 ---------------------------------------------------------------------------------------------------------*/
 
+@media screen and (max-width: 768px) {
 
-@media screen and (max-width:768px) {
+	.headerMenu a {
+		color: $textLight;
+	}
 
-.headerMenu a {
-		color:$textLight;
-}
+	.headerMenuLinks {
+		list-style-type: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 
-.headerMenuLinks {
-	list-style-type: none; 
-	display: flex; 
-	flex-direction: column; 
-	justify-content: space-around;
-}
+	.headerMenuMobile i {
+		color: $textLight;
+		font-size: 20px;
+		cursor: pointer;
+	}
 
-.headerMenuMobile i {
-	color: $textLight;
-	font-size: 20px; 
-	cursor: pointer;
-}
+	.headerMenuMobile a {
+		color: $textLight;
+		font-size: 20px;
+		cursor: pointer;
+	}
 
-.headerMenuMobile a {
-	color: $textLight; 
-	font-size: 20px; 
-	cursor: pointer;
-}
+	.socialIcons li a {
+		width: 1.5rem;
+		height: 1.5rem;
+		font-size: 1rem;
+	}
 
-.socialIcons li a{ 
-	width: 1.5rem; 
-	height: 1.5rem; 
-	font-size: 1rem; 
-}
+	.socialIcons li a:hover {
+		background-color: $hoverIcons;
+		color: $textLight;
+	}
 
-.socialIcons li a:hover{ 
-	background-color:$hoverIcons;
-	color: $textLight; 
-}
+	.headerMenu {
+		position: absolute;
+		padding: 2rem;
+		right: 0;
+		height: auto;
+		top: 10vh;
+		background-color: $backgroundDark;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 50%;
+		transform: translateX(100%);
+		transition: transform 0.5s ease-in;
+	}
 
-.headerMenu {
-	position: absolute;
-	padding: 2rem;
-	right: 0px;
-	height: auto;
-	top: 10vh;
-	background-color: $backgroundDark;
-	display: flex;
-	flex-direction: column;
-	align-items:flex-start;
-	width: 50%;
-	transform: translateX(100%);
-	transition:transform 0.5s ease-in;
-}
+	.headerMenu li {
+		opacity: 0;
+	}
 
-.headerMenu li {
-	opacity: 0;
-}
+	.headerMenuMobile {
+		display: block;
+	}
 
-.headerMenuMobile {
-	display: block;
-}
-
-.headerMenuMobile:hover {
-	display: block;
+	.headerMenuMobile:hover {
+		display: block;
 	}
 }
 
 .headerMenuMobile-active {
 	background-color: $backgroundDark;
-	color:$textLight;
+	color: $textLight;
 	transform: translateX(0%);
 	height: 30vh;
 	overflow-x: hidden;
 }
 
-@keyframes headerMenuFade{
+@keyframes headerMenuFade {
 	from {
 		opacity: 0;
 		transform: translateX(50px);
 	}
 	to {
 		opacity: 1;
-		transform: translateX(0px);
+		transform: translateX(0);
 	}
 }
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
 
-.headerMenuMobile {
-	display: none;
-}
+	.headerMenuMobile {
+		display: none;
+	}
 
-.headerMenuLinks {
-	padding:0.5rem;
-	list-style-type: none; 
-	text-decoration: none; 
-	display: flex; 
-	flex-direction: row; 
-	justify-content: space-between;
-	width: 90%;}
+	.headerMenuLinks {
+		padding: 0.5rem;
+		list-style-type: none;
+		text-decoration: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 90%;
+	}
 }

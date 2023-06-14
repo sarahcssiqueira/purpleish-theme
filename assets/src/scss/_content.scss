@@ -1,19 +1,19 @@
 .titleContent {
-    color:$textDark;
-    margin-bottom: 2rem;
-    text-align:justify;
+	color: $textDark;
+	margin-bottom: 2rem;
+	text-align: justify;
 }
 
 .textContent p {
-    color: $textMedium;
-    font-size: $fontMedium;
-    margin-bottom: 2rem;
-    text-align:justify;
+	color: $textMedium;
+	font-size: $fontMedium;
+	margin-bottom: 2rem;
+	text-align: justify;
 }
 
-.buttonDark a { 
-    color:$highlight;
-    font-weight: 600;
-    text-decoration: none;
-    text-transform: capitalize;
+.buttonDark a {
+	color: $highlight;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: capitalize;
 }

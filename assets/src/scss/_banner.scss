@@ -1,14 +1,14 @@
 .banner {
 	background-color: $background;
 	background-image: url($mainBanner);
-	background-size:cover;
-	padding: 5rem; 
+	background-size: cover;
+	padding: 5rem;
 	text-align: center;
-	section h1 { 
-		font-weight: 400; 
+	section h1 {
+		font-weight: 400;
 		font-size: 3rem;
-		line-height: 2rem; 
-		color: $textLight; 
+		line-height: 2rem;
+		color: $textLight;
 		padding: 2rem;
 	}
 }
