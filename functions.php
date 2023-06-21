@@ -9,46 +9,40 @@
 
 
 /* 
-* Register styles
+* Register and enqueue styles and scripts
 */
-function dentist_enqueue_scripts()
-{
-        $version = wp_get_theme()->get('Version');
-    
-        wp_enqueue_style(
-            'main-css', 
-            get_template_directory_uri() . '/assets/build/css/main.css', 
-            array('stylesheet'),
-            $version,
-            'all'
-        );
-        wp_enqueue_style(
-            'stylesheet', 
-            get_stylesheet_uri() 
-        );
-}
-
-add_action('wp_enqueue_scripts', 'dentist_enqueue_scripts');
-
-/* 
-* Register custom scripts 
-*/
-
-function dentist_register_scripts()
+function dentist_enqueues()
 {
     $version = wp_get_theme()->get('Version');
+    
+    wp_register_style(
+        'main-css', 
+        get_template_directory_uri() . '/assets/build/css/main.css', 
+        array('stylesheet'),
+        $version,
+        'all'
+    );
 
-    wp_enqueue_script(
+    wp_register_script(
         'scripts', 
         get_template_directory_uri()."/assets/build/js/main.js", 
         array(), 
         $version, 
         true
     );
-    
+
+    wp_enqueue_style(
+        'stylesheet', 
+        get_stylesheet_uri() 
+    );
+
+    wp_enqueue_script(
+        'scripts'
+    );
 }
 
-add_action('wp_enqueue_scripts', 'dentist_register_scripts');
+add_action('wp_enqueue_scripts', 'dentist_enqueues');
+
 
 
 /* Add theme suppports */
