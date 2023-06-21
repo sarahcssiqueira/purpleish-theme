@@ -18,13 +18,13 @@ function dentist_enqueues()
     wp_register_style(
         'main-css', 
         get_template_directory_uri() . '/assets/build/css/main.css', 
-        array('stylesheet'),
+        array(),
         $version,
         'all'
     );
 
     wp_register_script(
-        'scripts', 
+        'main-js', 
         get_template_directory_uri()."/assets/build/js/main.js", 
         array(), 
         $version, 
@@ -32,12 +32,12 @@ function dentist_enqueues()
     );
 
     wp_enqueue_style(
-        'stylesheet', 
+        'main-css', 
         get_stylesheet_uri() 
     );
 
     wp_enqueue_script(
-        'scripts'
+        'main-js'
     );
 }
 
