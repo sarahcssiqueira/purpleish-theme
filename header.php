@@ -12,35 +12,30 @@
 <html <?php language_attributes(); ?>> 
 <head>
     <title><?php echo get_bloginfo('name'); ?></title>
-      <?php wp_head();?>
-    <!--Provide a appropriate icon -->
-    <link rel="icon" type="" href=""/>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Check for best approach, here in head or enqueue on functions.php? -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <?php wp_head();?>
 </head>
 
 <body> 
   <header class="header">
 
-    <div>
-    <?php
+          <div class="header-title">
+          <?php
     if (function_exists('the_custom_logo') ) {
         the_custom_logo();
     }
     ?>
-    </div>
-          <div class="headerTitle">
               <a href="<?php echo get_home_url(); ?>">
                   <?php echo get_bloginfo('name'); ?>
               </a>
           </div>
 
-          <div class="headerMenu">
-              <div class="headerMenuLinks">
+          <div class="header-menu">
+              <div class="header-menu-links">
                 <?php wp_nav_menu(
                     array(
                             'menu'=>'primary',
@@ -52,42 +47,8 @@
 ?>
               </div>
           </div>
-
-          <!-- Hard Coded, in the future for a better user experience, create widgets -->
-          <div class="socialIcons">
-            <li>
-              <a href="" target="_blank">
-                <i class="fa-brands fa-whatsapp"></i>
-              </a>
-            </li>
-
-            <li>
-                <a href="" target="_blank">
-                  <i class="fa-solid fa-phone"></i>
-                </a>
-            </li>
-
-            <li>
-                <a href="" target="_blank">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-            </li>
-
-            <li>
-              <a href="" target="_blank">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li>
-
-            <li>
-                <a href="mailto:" target="_blank">
-                <i class="fa-solid fa-envelope"></i>
-                </a>
-            </li>
-          </div>
               
-          <!--Define proper breackpoint -->
-          <div class="headerMenuMobile">
+          <div class="header-menu-mobile">
               <i class="fa-solid fa-bars"></i>
           </div>
   </header>

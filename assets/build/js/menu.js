@@ -1,3 +1,0 @@
-/*! For license information please see menu.js.LICENSE.txt */
-!function(){var e,n,t;e=document.querySelector(".headerMenuMobile"),n=document.querySelector(".headerMenu"),t=document.querySelectorAll(".headerMenuLinks li"),e.addEventListener("click",(function(){n.classList.toggle("headerMenuMobile-active"),t.forEach((function(e,n){e.style.animation?e.style.animation="":e.style.animation="headerMenuFade 0.5s ease forwards ".concat(n/7+.8,"s")}))}))}();
-//# sourceMappingURL=menu.js.map

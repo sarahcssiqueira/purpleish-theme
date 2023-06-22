@@ -6,9 +6,9 @@
  *
  */
 ?>
-<div class="innerSectionLarge">
+<div class="inner-section-large">
 
-    <div class="titleContent"> 
+    <div class="title-content"> 
         <h2> 
             <a href="
                 <?php the_permalink();?>">
@@ -17,16 +17,14 @@
         <h2>
     </div>
     
-    <div class="textContent"> 
+    <div class="text-content"> 
         <p> <?php the_content();?> </p>
     </div>
 
-    <div class="backButton">
+    <div class="back-button">
         <a href="<?php echo get_home_url(); ?>">
               Back Home
         </a>
     </div>
-
-    <!--No comments on this project -->
     
 </div>

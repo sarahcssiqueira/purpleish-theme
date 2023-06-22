@@ -7,8 +7,8 @@
  */
 
 ?>
-<div class="containerLight">
-        <div class="innerSectionLarge">
+<div class="container-light">
+        <div class="inner-section-large">
 
           <div class="divider">
               <hr class="">    
@@ -16,7 +16,7 @@
 
             <h2>Blog</h2>
 
-              <div class="servicesList">
+              <div class="services-list">
                 <ul class="services">
                 
                   <?php $args = array(

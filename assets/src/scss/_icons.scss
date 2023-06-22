@@ -1,14 +1,14 @@
-.iconsDark {
+.icons-dark {
 	display: flex;
 	justify-content: center;
 	i {
 		margin: 1rem;
 		font-size: 3rem;
-		color: $textDark;
+		color: $text-dark;
 	}
 }
 
-.socialIcons {
+.social-icons {
 	list-style: none;
 	display: flex;
 	flex-direction: row;
@@ -16,7 +16,7 @@
 	li,
 	a {
 		border-radius: 100%;
-		color: $textLight;
+		color: $text-light;
 		width: 2rem;
 		height: 2rem;
 		text-decoration: none;
@@ -27,7 +27,7 @@
 	}
 }
 
-.socialIcons li a:hover {
-	background-color: $hoverIcons;
-	color: $textLight;
+.social-icons li a:hover {
+	background-color: $hover-icons;
+	color: $text-light;
 }

@@ -1,5 +1,5 @@
-.containerLight {
-	background-color: $backgroundLight;
+.container-light {
+	background-color: $background-light;
 	h2 {
 		display: flex;
 		justify-content: center;
@@ -9,9 +9,8 @@
 	}
 }
 
-.containerDark {
+.container-dark {
 	background-color: $background;
-
 	padding: 1.2rem;
 	text-align: center;
 	line-height: 3rem;
@@ -19,15 +18,15 @@
 		font-weight: 500;
 		font-size: 2.2rem;
 		line-height: 5rem;
-		color: $textLight;
+		color: $text-light;
 		padding: 1.5rem;
 	}
 }
 
-.containerDark h2 {
-	color: $textLight;
+.container-dark h2 {
+	color: $text-light;
 }
 
-.containerDark p {
-	color: $textLight;
+.container-dark p {
+	color: $text-light;
 }

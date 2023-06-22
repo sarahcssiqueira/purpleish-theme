@@ -7,31 +7,26 @@
 	align-items: center;
 }
 
-.headerTitle {
+.header-title {
 	text-transform: capitalize;
-	font-size: $fontLarge;
-	color: $textLight;
+	font-size: $font-large;
+	color: $text-light;
 	a {
 		text-transform: capitalize;
-		font-size: $fontLarge;
-		color: $textLight;
+		font-size: $font-large;
+		color: $text-light;
 		text-decoration: none;
-		&:hover {
-			text-transform: capitalize;
-			font-size: $fontLarge;
-			color: $textLight;
-		}
 	}
 }
 
-.headerMenu {
+.header-menu {
 	display: flex;
 	justify-content: space-around;
 	width: 40%;
 }
 
-.headerMenuLinks {
-	color: $textLight;
+.header-menu-links {
+	color: $text-light;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -40,7 +35,7 @@
 	a {
 		font-size: 1rem;
 		text-decoration: none;
-		color: $textLight;
+		color: $text-light;
 		display: flex;
 		flex-direction: row;
 		justify-content: center;

@@ -8,8 +8,8 @@
 
 ?>
 
-<div class="containerDark">
-      <div class="innerSectionSmall">      
+<div class="container-dark">
+      <div class="inner-section-small">      
             <section>
               <h1>
                 <?php echo get_bloginfo('description'); ?>

@@ -8,14 +8,14 @@
 
 ?>
 
-<div class="containerDark">
+<div class="container-dark">
 
-  <div class="innerSectionLarge">
+  <div class="inner-section-large">
 
       <h2>For informations or appointments:</h2>
       <p>Get in touch with us</p>
 
-      <div class="socialIcons">
+      <div class="social-icons">
 
         <!-- Hard coded links and icons, create a widget -->
             <li>

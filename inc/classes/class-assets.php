@@ -39,6 +39,8 @@ class Assets
             get_stylesheet_uri() 
         );
 
+        
+
         wp_enqueue_script(
             'main-js'
         );

@@ -1,27 +1,27 @@
 /* Fonts */
 
-$fontPrimary: "Lato", sans-serif;
-$fontSecondary: "Lato", sans-serif;
+$font-primary: "Lato", sans-serif;
+$font-secondary: "Lato", sans-serif;
 
-/*Font Sizes */
+/* Font Sizes */
 
-$fontSmall: 0.5rem;
-$fontMedium: 1rem;
-$fontLarge: 1.2rem;
+$font-small: 0.5rem;
+$font-medium: 1rem;
+$font-large: 1.2rem;
 
 /* Colors */
 
-$background: #3c738c;
-$backgroundLight:white;
-$backgroundDark:#000d13;
-$highlight:#0488f3;
-$textLight: white;
-$textMedium:#181818;
-$textDark:$background;
-$btnDark:#134b64;
-$btnLight:#0488f3;
-$hoverIcons:$btnDark;
+$background: #0074e4;
+$background-light: #fff;
+$background-dark: #000d13;
+$high-light: #0488f3;
+$text-light: #fff;
+$text-medium: #181818;
+$text-dark: $background;
+$btn-dark: #134b64;
+$btn-light: #0488f3;
+$hover-icons: $btn-dark;
 
-/*Images */
+/* Images */
 
-$mainBanner: "https://cdn.pixabay.com/photo/2021/08/10/13/43/orthodontics-6536026_960_720.jpg";
+$main-banner: "https://cdn.pixabay.com/photo/2021/08/10/13/43/orthodontics-6536026_960_720.jpg";

@@ -8,8 +8,8 @@
 
 ?>
 
-<div class="containerLight">
-    <div class="innerSectionLarge">
+<div class="container-light">
+    <div class="inner-section-large">
 
       <div class="iconsDark">
         <i class="fa-solid fa-tooth"></i>

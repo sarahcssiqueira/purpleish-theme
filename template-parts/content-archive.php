@@ -7,9 +7,9 @@
  */
 
 ?>
-<div class="innerSectionLarge">
+<div class="inner-section-large">
 
-    <div class="titleContent"> 
+    <div class="title-content"> 
         <h2> 
 			<a href="
 				<?php the_permalink();?>">
@@ -22,12 +22,12 @@
 		<?php the_date();?>
 	</span>
 
-	<div class="textContent">
+	<div class="text-content">
 			<?php the_excerpt(); ?>
     </div>
 					
     
-	<div class="backButton">
+	<div class="back-button">
 		<a class="more-link" href="<?php the_permalink();?>">Read more &rarr;</a>
     </div>
 

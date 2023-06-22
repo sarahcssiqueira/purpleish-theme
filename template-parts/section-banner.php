@@ -8,7 +8,7 @@
 
 ?>
 <div class="banner">
-      <div class="innerSectionLarge">      
+      <div class="inner-section-large">      
             <section>
               <h1>
               </h1>
