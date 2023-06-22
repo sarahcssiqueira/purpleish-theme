@@ -5,7 +5,6 @@
  * This is the template that displays all of the <head> section and everything up until <div id="content">
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  */
 ?>
 
@@ -13,7 +12,7 @@
 <html <?php language_attributes(); ?>> 
 <head>
     <title><?php echo get_bloginfo('name'); ?></title>
-	  <?php wp_head();?>
+      <?php wp_head();?>
     <!--Provide a appropriate icon -->
     <link rel="icon" type="" href=""/>
     <meta charset="utf-8">
@@ -26,6 +25,14 @@
 
 <body> 
   <header class="header">
+
+    <div>
+    <?php
+    if (function_exists('the_custom_logo') ) {
+        the_custom_logo();
+    }
+    ?>
+    </div>
           <div class="headerTitle">
               <a href="<?php echo get_home_url(); ?>">
                   <?php echo get_bloginfo('name'); ?>
@@ -34,16 +41,15 @@
 
           <div class="headerMenu">
               <div class="headerMenuLinks">
-              <!-- In the future, improve it using class Walker {} -->
-                  <?php wp_nav_menu(
-                          array(
+                <?php wp_nav_menu(
+                    array(
                             'menu'=>'primary',
                             'container'=>'',
                             'theme_location'=>'primary',
                             'items_wrap'=>'<li>%3$s</li>'
                               )
-                          ); 
-                  ?>
+                ); 
+?>
               </div>
           </div>
 
