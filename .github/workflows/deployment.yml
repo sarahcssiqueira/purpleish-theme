@@ -21,7 +21,9 @@ jobs:
           npm install
 
       - name: Build
-        run: npm run precommit
+        run: |
+          cd assets
+          npm run precommit
 
       - name: Sync
         env:
