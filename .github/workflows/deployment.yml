@@ -20,10 +20,10 @@ jobs:
           cd assets
           npm install
 
-      - name: Build
-        run: |
-          cd assets
-          npm run precommit
+      # - name: Build
+      #  run: |
+      #    cd assets
+      #    npm run precommit
 
       - name: Sync
         env:
