@@ -27,7 +27,7 @@ jobs:
 
       - name: Sync
         env:
-          dest: "${{ variables.SSH_USER }}@${{ variables.IP }}:/var/www/dentist-theme.sarahjobs.com/wp-content/themes/dentist-theme"
+          dest: "${{ secrets.SSH_USER }}@${{ secrets.IP }}:/var/www/dentist-theme.sarahjobs.com/wp-content/themes/dentist-theme"
         run: |
           echo "${{ secrets.DEPLOY_KEY }}" > deploy_key
           chmod 600 ./deploy_key
