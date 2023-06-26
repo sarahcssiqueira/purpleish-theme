@@ -20,14 +20,14 @@ jobs:
           cd assets
           npm install
 
-      # - name: Build
-      #  run: |
-      #    cd assets
-      #    npm run precommit
+      #      - name: Build
+      #        run: |
+      #          cd assets
+      #          npm run build
 
       - name: Sync
         env:
-          dest: "root@24.199.93.154:/var/www/dentist-theme.sarahjobs.com/wp-content/themes/dentist-theme"
+          dest: "$SSH_USER@$IP:/var/www/dentist-theme.sarahjobs.com/wp-content/themes/dentist-theme"
         run: |
           echo "${{secrets.DEPLOY_KEY}}" > deploy_key
           chmod 600 ./deploy_key
@@ -36,5 +36,5 @@ jobs:
             --exclude /deploy_key \
             --exclude /.git/ \
             --exclude /.github/ \
-            --exclude /node_modules/ \
+            --exclude /assets/node_modules/ \
             ./ ${{env.dest}}

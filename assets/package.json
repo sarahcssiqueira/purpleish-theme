@@ -12,7 +12,7 @@
     "lint:fix": "eslint --fix src/js/*",
     "lint-css": "stylelint src/scss/*.scss",
     "lint-css:fix": "npm run lint-css -- --fix",
-    "precommit": "npm run lint-css:fix && npm run lint:fix && npm run prod"
+    "build": "npm run lint-css:fix && npm run lint:fix && npm run prod"
   },
   "keywords": [
     "wordpress",
