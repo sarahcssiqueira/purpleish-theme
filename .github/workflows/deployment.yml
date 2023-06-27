@@ -33,7 +33,7 @@ jobs:
           SSH_KEY: ${{ secrets.DEPLOY_KEY }}
 
       - name: Send files
-        run: "rsync --delete -avO ${{ env.RSYNC_FLAGS }}
+        run: "rsync --delete -avO
           --exclude /deploy_key \
           --exclude /.git/ \
           --exclude /.github/ \
@@ -41,7 +41,7 @@ jobs:
           ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.DEST }}"
 
         env:
-          RSYNC_FLAGS: "" #--dry-run
+          # RSYNC_FLAGS: "" #--dry-run
           #          EXCLUDES: bin/rsync-excludes.txt
           # SSH_HOST: digitalocean
-          DEST: "var/www/dentist-theme.sarahjobs.com/wp-content/themes/dentist-theme"
+          DEST: "/var/www/dentist-theme.sarahjobs.com/wp-content/themes/dentist-theme"
