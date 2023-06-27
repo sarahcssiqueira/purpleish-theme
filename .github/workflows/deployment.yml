@@ -40,12 +40,12 @@ jobs:
           --exclude /.gitignore \
           --exclude /.github/ \
           --exclude /assets/node_modules/ \
-          ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.DEST }}"
+          ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.PATH }}/wp-content/themes/${{ env.THEME_NAME }}"
 
         env:
           # RSYNC_FLAGS: "" #--dry-run
           # EXCLUDES: bin/rsync-excludes.txt
           SSH_HOST: digitalocean
-          THEME_NAME: dentist-theme
           PATH: /var/www/dentist-theme.sarahjobs.com
-          DEST: "$PATH/wp-content/themes/$THEME_NAME"
+          THEME_NAME: dentist-theme
+        #  DEST: "$PATH/wp-content/themes/$THEME_NAME"
