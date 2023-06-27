@@ -37,7 +37,6 @@ jobs:
         run: "rsync --delete -avO
           --exclude /deploy_key \
           --exclude /.git/ \
-          --exclude /.gitignore \
           --exclude /.github/ \
           --exclude /assets/node_modules/ \
           ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.PATH }}/wp-content/themes/${{ env.THEME_NAME }}"
