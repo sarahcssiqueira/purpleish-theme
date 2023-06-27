@@ -1,0 +1,84 @@
+name: Deployment
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 12.x
+
+      #      - name: Install dependencies
+      #        run: |
+      #          cd assets
+      #          npm install
+
+      #      - name: Build
+      #        run: |
+      #          cd assets
+      #          npm run build
+
+#      - name: Sync
+#        env:
+#          SSH_USER: ${{ secrets.SSH_USER }}
+#          SSH_HOST: ${{ secrets.SSH_HOST }}
+#          dest: " ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:/var/www/dentist-theme.sarahjobs.com/wp-content/themes/dentist-theme"
+#        run: |
+#          echo "${{ secrets.DEPLOY_KEY }}" > deploy_key
+#          chmod 600 ./deploy_key
+#          rsync -chav --delete \
+#            -e 'ssh -i ./deploy_key -o StrictHostKeyChecking=no' \
+#            --exclude /deploy_key \
+#            --exclude /.git/ \
+#            --exclude /.github/ \
+#            --exclude /assets/node_modules/ \
+#            ./ ${{env.dest}}
+#
+
+        - name: Configure SSH
+            run: |
+               mkdir -p ~/.ssh/
+      
+              echo "$SSH_KEY" > ~/.ssh/deploy.key
+      
+              chmod 600 ~/.ssh/deploy.key
+      
+              cat >>~/.ssh/config <<END
+      
+              Host cloudways
+      
+                HostName $SSH_HOST
+      
+                User $SSH_USER
+      
+                IdentityFile ~/.ssh/deploy.key
+      
+                StrictHostKeyChecking no
+      
+              END
+      
+            env:
+      
+              SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+      
+       
+      
+          - name: Send files
+      
+            run: "rsync --delete -avO ${{ env.RSYNC_FLAGS }} --exclude-from=${{ env.EXCLUDES }} ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.DESTINATION }}"
+      
+            env:
+      
+              RSYNC_FLAGS: '' #--dry-run
+      
+              EXCLUDES: bin/rsync-excludes.txt
+      
+              SSH_HOST: cloudways
+      
+              DESTINATION: "~/public_html/wp-content/"
