@@ -7,7 +7,6 @@ on:
 env:
   SSH_USER: ${{ secrets.SSH_USER }}
   SSH_HOST: ${{ secrets.SSH_HOST }}
-  SSH_KEY: ${{ secrets.DEPLOY_KEY }}
 
 jobs:
   deploy:
@@ -16,6 +15,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+
       - uses: actions/setup-node@v2
 
       - name: Configure SSH
@@ -30,6 +30,8 @@ jobs:
             IdentityFile ~/.ssh/deploy.key
             StrictHostKeyChecking no
           END
+        env:
+          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
 
       - name: Send files
         run: "rsync --delete -avO
