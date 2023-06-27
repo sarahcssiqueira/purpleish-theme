@@ -31,7 +31,7 @@ jobs:
             StrictHostKeyChecking no
           END
         env:
-          SSH_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          SSH_KEY: ${{ secrets.DEPLOY_KEY }}
 
       - name: Send files
         run: "rsync --delete -avO
