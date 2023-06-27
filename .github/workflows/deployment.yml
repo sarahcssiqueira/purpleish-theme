@@ -23,16 +23,12 @@ jobs:
           echo "$SSH_KEY" > ~/.ssh/deploy.key
           chmod 600 ~/.ssh/deploy.key
           cat >>~/.ssh/config <<END
-
-          Digital Ocean Deploy
-
-          HostName $SSH_HOST
-          User $SSH_USER
-          IdentityFile ~/.ssh/deploy.key
-          StrictHostKeyChecking no
-
+          Host digitalocean
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/deploy.key
+            StrictHostKeyChecking no
           END
-
         env:
           SSH_KEY: ${{ secrets.DEPLOY_KEY }}
 
@@ -45,7 +41,7 @@ jobs:
           ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.DEST }}"
 
         env:
-          #          RSYNC_FLAGS: "" #--dry-run
+          RSYNC_FLAGS: "" #--dry-run
           #          EXCLUDES: bin/rsync-excludes.txt
           # SSH_HOST: digitalocean
           DEST: "var/www/dentist-theme.sarahjobs.com/wp-content/themes/dentist-theme"
