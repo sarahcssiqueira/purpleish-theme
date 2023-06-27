@@ -8,11 +8,7 @@
 
 ?>
 <div class="container-light">
-        <div class="inner-section-large">
-
-          <div class="divider">
-              <hr class="">    
-          </div>    
+        <div class="inner-section-large">  
 
             <h2>Blog</h2>
 
