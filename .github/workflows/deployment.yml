@@ -1,4 +1,4 @@
-name: Deployment
+name: Deploy Theme
 
 on:
   push:
@@ -10,15 +10,14 @@ env:
 
 jobs:
   deploy:
-    name: WordPress Theme on Digital Ocean
+    name: Deploy WordPress Theme on Digital Ocean
     runs-on: ubuntu-20.04
 
     steps:
-      - uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-      - uses: actions/setup-node@v2
-
-      - name: Configure SSH
+      - name: Set SSH Connection
         run: |
           mkdir -p ~/.ssh/
           echo "$SSH_KEY" > ~/.ssh/deploy.key
@@ -33,16 +32,13 @@ jobs:
         env:
           SSH_KEY: ${{ secrets.DEPLOY_KEY }}
 
-      - name: Send files
+      - name: Sync theme files
         run: "rsync --delete -avO
           --exclude /deploy_key \
           --exclude /.git/ \
           --exclude /.github/ \
           --exclude /assets/node_modules/ \
           ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.DEST }}"
-
         env:
-          # RSYNC_FLAGS: "" #--dry-run
-          # EXCLUDES: bin/rsync-excludes.txt
           SSH_HOST: digitalocean
           DEST: "/var/www/dentist-theme.sarahjobs.com/wp-content/themes/dentist-theme"
