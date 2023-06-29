@@ -9,7 +9,6 @@
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  */
-
 if ( ! defined( 'DENTIST_DIR_PATH' ) ) {
 	define( 'DENTIST_DIR_PATH', untrailingslashit( get_template_directory() ) );
 }

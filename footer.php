@@ -7,6 +7,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
+
 ?><footer class="footer">
 <span>
 	Dentist Clinic Theme by 
