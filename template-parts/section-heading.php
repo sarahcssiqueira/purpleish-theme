@@ -1,6 +1,8 @@
 <?php
 /**
- * Template part for displaying banner section.
+ * Template part for displaying banner section
+ *
+ * @package dentist_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
@@ -11,7 +13,7 @@
 	<div class="inner-section-small">      
 			<section>
 			<h1>
-				<?php echo get_bloginfo( 'description' ); ?>
+				<?php echo esc_html( get_bloginfo( 'description' ) ); ?>
 			</h1>
 			</section>
 	</div>

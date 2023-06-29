@@ -2,6 +2,8 @@
 /**
  * Template part for displaying a banner section.
  *
+ * @package dentist_theme
+ *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
 

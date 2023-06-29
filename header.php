@@ -1,8 +1,9 @@
 <?php
 /**
- * The header for Resume Theme.
- *
+ * The header
  * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @package dentist_theme
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
@@ -12,7 +13,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>> 
 <head>
-	<title><?php echo get_bloginfo( 'name' ); ?></title>
+	<title><?php echo esc_html( get_bloginfo( 'name' ) ); ?></title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<?php wp_head(); ?>
@@ -23,7 +24,7 @@
 
 		<div class="header-title">
 		   
-			<a href="<?php echo get_home_url(); ?>">
+			<a href="<?php echo esc_html( get_home_url() ); ?>">
 			<?php
 			if ( function_exists( 'the_custom_logo' ) ) {
 					the_custom_logo();

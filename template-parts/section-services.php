@@ -1,6 +1,8 @@
 <?php
 /**
- * Template part for displaying services section.
+ * Template part for displaying services section
+ *
+ * @package dentist_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
@@ -37,7 +39,7 @@
 
 					<li> 
 						<a href="<?php the_permalink(); ?>">
-								<?php echo get_the_title(); ?>
+								<?php echo esc_html( get_the_title() ); ?>
 						</a>
 					</li>
 

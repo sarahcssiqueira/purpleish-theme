@@ -1,6 +1,8 @@
 <?php
 /**
- * Template part for displaying contact section.
+ * Template part for displaying contact section
+ *
+ * @package dentist_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */

@@ -2,6 +2,8 @@
 /**
  * The template for displaying single posts.
  *
+ * @package dentist_theme
+ *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  */
 

@@ -2,6 +2,8 @@
 /**
  * The template for displaying search results pages.
  *
+ * @package dentist_theme
+ *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
  */
 

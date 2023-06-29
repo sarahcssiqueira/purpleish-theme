@@ -3,10 +3,11 @@
  *
  * The template for displaying a static front page.
  *
- * @package  Dentist_Theme
+ * @package dentist_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
+
 ?><?php get_header(); ?>
 
 	<div class="content">

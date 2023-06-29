@@ -1,11 +1,11 @@
 <?php
-
 /**
  * The template for displaying 404 pages.
  *
+ * @package dentist_theme
+ *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
-
 
 get_header();?>
 

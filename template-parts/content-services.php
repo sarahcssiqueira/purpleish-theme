@@ -1,6 +1,8 @@
 <?php
 /**
- * Template part for displaying custom post types: Skills.
+ * Template part for displaying custom post types
+ *
+ * @package dentist_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
@@ -20,7 +22,7 @@
 	</div>
 
 	<div class="button-dark">
-		<a href="<?php echo get_home_url(); ?>">
+		<a href="<?php echo esc_html( get_home_url() ); ?>">
 		Back
 		</a>
 	</div>
