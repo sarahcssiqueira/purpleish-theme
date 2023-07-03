@@ -1,44 +1,29 @@
 <?xml version="1.0"?>
-<ruleset name="CS">
-	<description>Custom coding standards.</description>
-	<config name="testVersion" value="5.6-"/>
-	<exclude-pattern>.codeception/*</exclude-pattern>
-	<exclude-pattern>.github/*</exclude-pattern>
-	<exclude-pattern>vendor/*</exclude-pattern>
-	<exclude-pattern>node_modues/*</exclude-pattern>
-	<exclude-pattern>.idea/*</exclude-pattern>
-	<exclude-pattern>assets/*</exclude-pattern>
+<ruleset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+name="Dentist Theme" 
+xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
 
-	<arg value="ps"/>
-	<arg name="colors"/>
-	<arg name="parallel" value="100"/>
-	<arg name="extensions" value="php"/>
-	<arg name="cache" value=".phpcs.cache"/>
+	<description>WordPress Coding Standards project</description>
 
-	<rule ref="WordPress">
-		<!-- PSR4 -->
-		<exclude name="WordPress.Files.FileName.InvalidClassFileName"/>
-		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase"/>
-	</rule>
+	<!--
+	COMMAND LINE ARGUMENTS
+	https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset
+	-->
 
-	<!-- <rule ref="PHPCompatibility"/> -->
+	<file>.</file>
 
-	<rule ref="Generic.Metrics.CyclomaticComplexity">
-		<properties>
-			<property name="complexity" value="3"/>
-			<property name="absoluteComplexity" value="5"/>
-		</properties>
-	</rule>
+	<!-- Exclude the Composer Vendor directory. -->
+	<exclude-pattern>/vendor/*</exclude-pattern>
 
-	<rule ref="Generic.Metrics.NestingLevel">
-		<properties>
-			<property name="absoluteNestingLevel" value="3"/>
-		</properties>
-	</rule>
+	<!-- Exclude the Node Modules directory. -->
+	<exclude-pattern>assets/node_modules/*</exclude-pattern>
 
-	<!-- Allow short array syntax -->
-	<rule ref="Generic.Arrays.DisallowShortArraySyntax.Found">
-		<severity>0</severity>
-	</rule>
-	<rule ref="Generic.Arrays.DisallowLongArraySyntax.Found"/>
+	<!-- Check up to 8 files simultaneously. -->
+	<arg name="parallel" value="8"/>
+
+
+	<!-- SET UP THE RULESETS -->
+
+	<rule ref="WordPress"></rule>
+
 </ruleset>

@@ -2,7 +2,6 @@
 /**
  * Template part for displaying services section
  *
- * @package dentist_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
@@ -23,10 +22,11 @@
 			<ul class="services">
 
 			<?php
-				$args = [
+				$args = array(
 					'post_type'      => 'services',
 					'posts_per_page' => -1,
-				];
+				);
+
 
 					$post_data = new WP_Query( $args );
 

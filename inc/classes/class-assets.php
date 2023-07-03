@@ -9,7 +9,7 @@ class Assets {
 
 	function __construct() {
 
-		add_action( 'wp_enqueue_scripts', [ $this, 'dentist_enqueues' ] );
+		add_action( 'wp_enqueue_scripts', array( $this, 'dentist_enqueues' ) );
 	}
 
 	function dentist_enqueues() {
@@ -18,7 +18,7 @@ class Assets {
 		wp_register_style(
 			'main-css',
 			DENTIST_DIR_URI . '/assets/build/css/main.css',
-			[],
+			array(),
 			$version,
 			'all'
 		);
@@ -26,7 +26,7 @@ class Assets {
 		wp_register_script(
 			'main-js',
 			DENTIST_DIR_URI . '/assets/build/js/main.js',
-			[],
+			array(),
 			$version,
 			true
 		);
