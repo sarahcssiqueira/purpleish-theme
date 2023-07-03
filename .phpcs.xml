@@ -3,27 +3,18 @@
 name="Dentist Theme" 
 xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/squizlabs/PHP_CodeSniffer/master/phpcs.xsd">
 
-	<description>WordPress Coding Standards project</description>
+	
+	<description>WordPress Coding Standards</description>
 
 	<!--
-	COMMAND LINE ARGUMENTS
-	https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset
+	Included via WordPress-Extra.
+	<rule ref="WordPress-Core"/>
 	-->
-
-	<file>.</file>
-
-	<!-- Exclude the Composer Vendor directory. -->
-	<exclude-pattern>/vendor/*</exclude-pattern>
-
-	<!-- Exclude the Node Modules directory. -->
-	<exclude-pattern>assets/node_modules/*</exclude-pattern>
-
-	<!-- Check up to 8 files simultaneously. -->
-	<arg name="parallel" value="8"/>
-
-
-	<!-- SET UP THE RULESETS -->
-
-	<rule ref="WordPress"></rule>
+	<rule ref="WordPress-Docs"/>
+	<rule ref="WordPress-Extra">
+		<!-- Prevent duplicate messages + deprecation notice from deprecated sniff. -->
+		<exclude name="WordPress.WP.TimezoneChange.timezone_change_date_default_timezone_set"/>
+		<exclude name="WordPress.WP.TimezoneChange.DeprecatedSniff"/>
+	</rule>
 
 </ruleset>
