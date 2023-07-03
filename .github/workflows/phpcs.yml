@@ -12,7 +12,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
+      run: composer install
 
     - name: Run CS
-      run: ./vendor/bin/phpcs --standard=.phpcs.xml .
+      run: composer cs
