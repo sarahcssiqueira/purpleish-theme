@@ -1,10 +1,10 @@
-name: Check Coding Standards
+name: PHPCS
 
 on: push
 
 jobs:
   build:
-
+    name: Check for WordPress Coding Standards
     runs-on: ubuntu-latest
 
     steps:
@@ -14,11 +14,11 @@ jobs:
     - name: Install dependencies
       run: composer install
 
-    - name: Run Config
+    - name: Set wpcs path
       run: composer cstd
 
-    - name: Run CBF
+    - name: Run phpcbf
       run: composer cbf
 
-    - name: Run CS
+    - name: Run phpcs
       run: composer cs
