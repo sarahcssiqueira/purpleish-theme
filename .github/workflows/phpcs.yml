@@ -1,4 +1,4 @@
-name: My GH Actions
+name: Check Coding Standards
 
 on: push
 
@@ -8,10 +8,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
 
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress --no-suggest
 
     - name: Run CS
-      run: vendor/bin/phpcs --standard=phpcs.xml .
+      run: vendor/bin/phpcs --standard=.phpcs.xml .
