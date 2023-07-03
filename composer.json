@@ -6,7 +6,7 @@
     }
   },
   "scripts": {
-    "cs": "./vendor/bin/phpcs --standard=.phpcs.xml .",
+    "cs": "./vendor/bin/phpcs --standard=.phpcs.xml --report=summary .",
     "cbf": "./vendor/bin/phpcbf --standard=.phpcs.xml ."
   },
   "authors": [

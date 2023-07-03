@@ -2,6 +2,8 @@
 /**
  * Template part for displaying services section
  *
+ * @package dentist_theme
+ *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
 

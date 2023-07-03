@@ -14,5 +14,8 @@ jobs:
     - name: Install dependencies
       run: composer install
 
+    - name: Run CBF
+      run: composer cbf
+
     - name: Run CS
       run: composer cs

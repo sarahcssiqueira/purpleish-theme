@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<checkstyle version="3.7.2">
-<file name="C:\Users\sarah\dev\docker-wp\themes\dentist-theme\footer.php">
- <error line="9" column="2" severity="error" message="Missing @package tag in file comment" source="Squiz.Commenting.FileComment.MissingPackageTag"/>
-</file>
-</checkstyle>
-
