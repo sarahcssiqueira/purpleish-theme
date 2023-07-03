@@ -6,6 +6,7 @@
     }
   },
   "scripts": {
+    "cstd": "./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
     "cs": "./vendor/bin/phpcs --standard=.phpcs.xml --report=summary .",
     "cbf": "./vendor/bin/phpcbf --standard=.phpcs.xml ."
   },
