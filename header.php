@@ -36,12 +36,12 @@
 		<div class="header-menu">
 			<?php
 			wp_nav_menu(
-				array(
+				[
 					'menu'           => 'primary',
 					'container'      => '',
 					'theme_location' => 'primary',
 					'items_wrap'     => '<li>%3$s</li>',
-				)
+				]
 			);
 			?>
 		</div>

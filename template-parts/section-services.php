@@ -23,10 +23,10 @@
 			<ul class="services">
 
 			<?php
-				$args = array(
+				$args = [
 					'post_type'      => 'services',
 					'posts_per_page' => -1,
-				);
+				];
 
 					$post_data = new WP_Query( $args );
 
