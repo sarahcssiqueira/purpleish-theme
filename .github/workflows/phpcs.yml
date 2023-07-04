@@ -4,21 +4,21 @@ on: push
 
 jobs:
   build:
-    name: Check for WordPress Coding Standards
+    name: Check WPCS
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout
-      uses: actions/checkout@v2
+      - name: Checkout
+        uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: composer install
+      - name: Install dependencies
+        run: composer install
 
-    - name: Set wpcs path
-      run: composer cstd
+      - name: Set wpcs path
+        run: composer cstd
 
-    - name: Run phpcbf
-      run: composer cbf
+      - name: Run phpcbf
+        run: composer cbf
 
-    - name: Run phpcs
-      run: composer cs
+      - name: Run phpcs
+        run: composer cs

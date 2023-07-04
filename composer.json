@@ -2,10 +2,11 @@
   "name": "sarah/dentist-theme",
   "autoload": {
     "psr-4": {
-      "Sarah\\DentistTheme\\": "src/"
+      "DentistTheme\\": ""
     }
   },
   "scripts": {
+    "cs-packages": "./vendor/bin/phpcs -i",
     "cstd": "./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
     "cs": "./vendor/bin/phpcs --standard=.phpcs.xml --report=summary .",
     "cbf": "./vendor/bin/phpcbf --standard=.phpcs.xml ."
