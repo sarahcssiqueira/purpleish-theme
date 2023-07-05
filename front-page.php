@@ -12,9 +12,9 @@
 
 	<div class="content">
 
-		<?php get_template_part( 'template-parts/section', 'banner' ); ?>
-
 		<?php get_template_part( 'template-parts/section', 'heading' ); ?>
+
+		<?php get_template_part( 'template-parts/section', 'banner' ); ?>
 
 		<?php get_template_part( 'template-parts/section', 'services' ); ?>
 

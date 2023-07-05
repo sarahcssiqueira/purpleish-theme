@@ -1,5 +1,5 @@
 {
-  "name": "sarah/dentist-theme",
+  "name": "sarahcssiqueira/dentist-theme",
   "autoload": {
     "psr-4": {
       "DentistTheme\\": ""

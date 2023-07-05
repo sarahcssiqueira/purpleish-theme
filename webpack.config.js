@@ -5,16 +5,15 @@
 const path                 = require( "path" );
 const MiniCssExtractPlugin = require( "mini-css-extract-plugin" );
 const CssMinimizerPlugin   = require( "css-minimizer-webpack-plugin" );
-// const cssnano = require("cssnano");
 const { CleanWebpackPlugin }            = require( "clean-webpack-plugin" );
 const TerserJsPlugin                    = require( "terser-webpack-plugin" );
 const CopyPlugin                        = require( "copy-webpack-plugin" );
 const DependencyExtractionWebpackPlugin = require( "@wordpress/dependency-extraction-webpack-plugin" );
 
-const JS_DIR  = path.resolve( __dirname, "src/js" );
-const IMG_DIR = path.resolve( __dirname, "src/img" );
+const JS_DIR  = path.resolve( __dirname, "assets/src/js" );
+const IMG_DIR = path.resolve( __dirname, "assets/src/img" );
 // const LIB_DIR = path.resolve(__dirname, "src/lib");
-const BUILD_DIR = path.resolve( __dirname, "build" );
+const BUILD_DIR = path.resolve( __dirname, "assets/build" );
 
 const entry = {
 	main: JS_DIR + "/main.js",
