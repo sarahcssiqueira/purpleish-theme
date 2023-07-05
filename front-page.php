@@ -16,9 +16,11 @@
 
 		<?php get_template_part( 'template-parts/section', 'banner' ); ?>
 
+		<?php get_template_part( 'template-parts/section', 'counter' ); ?>
+
 		<?php get_template_part( 'template-parts/section', 'services' ); ?>
 
-		<?php get_template_part( 'template-parts/section', 'blog' ); ?>
+		<?php get_template_part( 'template-parts/section', 'doctors' ); ?>
 
 		<?php get_template_part( 'template-parts/section', 'contact' ); ?>
 
