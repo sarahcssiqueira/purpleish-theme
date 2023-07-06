@@ -1,0 +1,67 @@
+/* Containers */
+
+.container-light {
+    background-color: $light;
+    color: $dark;
+}
+.container-highlight {
+    background-color: $highlight;
+    color: $light;
+}
+.container-dark {
+    background-color: $dark;
+    color:$light;
+}
+
+/* Spacing */
+
+/* Alignment */
+.center {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.justify {
+    display: flex;
+	justify-content: justify;
+	text-align: justify;
+
+}
+
+/* Elements */
+
+.header {
+	z-index: 5;
+	background: $light;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+.header-menu {
+	display: flex;
+	justify-content: space-around;
+	flex-direction: row;
+	color: $dark;
+	width: 40%;
+	li,
+	a {	
+		list-style-type: none;
+		font-size: 1rem;
+		text-decoration: none;
+	}
+}
+
+/* Inner */
+
+.inner-section-small {
+	padding: 0.5rem;
+}
+
+.inner-section-large {
+	margin: 2rem;
+	padding: 2rem;
+}

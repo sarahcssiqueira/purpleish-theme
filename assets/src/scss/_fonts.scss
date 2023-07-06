@@ -1,0 +1,27 @@
+/* Text */
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-primary;
+	color: $dark;
+}
+
+
+/* Links */
+
+a {
+	color: $highlight;
+}
+
+
+.title-content {
+	color: $dark;
+	margin-bottom: 2rem;
+	text-align: justify;
+}
+
+.text-content p {
+	color: $accent;
+	font-size: $font-medium;
+	margin-bottom: 2rem;
+	text-align: justify;
+}

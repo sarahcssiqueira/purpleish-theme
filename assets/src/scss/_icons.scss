@@ -4,7 +4,7 @@
 	i {
 		margin: 1rem;
 		font-size: 3rem;
-		color: $text-dark;
+		color: $dark;
 	}
 }
 
@@ -16,7 +16,7 @@
 	li,
 	a {
 		border-radius: 100%;
-		color: $text-light;
+		color: $light;
 		width: 2rem;
 		height: 2rem;
 		text-decoration: none;
@@ -28,6 +28,6 @@
 }
 
 .social-icons li a:hover {
-	background-color: $hover-icons;
-	color: $text-light;
+	background-color: $highlight;
+	color: $light;
 }

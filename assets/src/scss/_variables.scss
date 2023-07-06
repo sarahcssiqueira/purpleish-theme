@@ -1,7 +1,14 @@
+/* Colors */
+
+$light: #ffffff;
+$highlight: #0074e4;
+$accent: #134b64;
+$dark: #000d13;
+
 /* Fonts */
 
-$font-primary: "Lato", sans-serif;
-$font-secondary: "Lato", sans-serif;
+$font-primary: "Arial", sans-serif;
+$font-secondary: "Arial", sans-serif;
 
 /* Font Sizes */
 
@@ -9,19 +16,11 @@ $font-small: 0.5rem;
 $font-medium: 1rem;
 $font-large: 1.2rem;
 
-/* Colors */
+/* Breakpoints */
 
-$background: #0074e4;
-$background-light: #fff;
-$background-dark: #000d13;
-$high-light: #0488f3;
-$text-light: #fff;
-$text-medium: $background;
-$text-dark: #050506;
-$btn-dark: #134b64;
-$btn-light: #0488f3;
-$hover-icons: $btn-dark;
 
 /* Images */
 
 $main-banner: "https://cdn.pixabay.com/photo/2021/08/10/13/43/orthodontics-6536026_960_720.jpg";
+
+

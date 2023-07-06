@@ -1,5 +1,15 @@
+/* Divider */
+
+.divider hr {
+	border-top: 2px solid $light;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+/* Banners */
+
 .banner {
-	background-color: $background;
+	background-color: $highlight;
 	background-image: url($main-banner);
 	background-size: cover;
 	padding: 5rem;
@@ -8,7 +18,7 @@
 		font-weight: 400;
 		font-size: 3rem;
 		line-height: 2rem;
-		color: $text-light;
+		color: $light;
 		padding: 2rem;
 	}
 }
