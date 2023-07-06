@@ -2,9 +2,15 @@
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-primary;
-	color: $dark;
 }
 
+h1, h2 {
+    text-align: center;
+}
+
+h3, h4, h5, h6, p {
+	text-align: justify;
+}
 
 /* Links */
 
@@ -19,7 +25,7 @@ a {
 	text-align: justify;
 }
 
-.text-content p {
+.text-content {
 	color: $accent;
 	font-size: $font-medium;
 	margin-bottom: 2rem;

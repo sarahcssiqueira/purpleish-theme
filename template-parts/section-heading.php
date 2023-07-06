@@ -9,12 +9,8 @@
 
 ?>
 
-<div class="container-highlight">
-	<div class="">      
-			<section>
-			<h1>
-				<?php echo esc_html( get_bloginfo( 'description' ) ); ?>
-			</h1>
-			</section>
-	</div>
+<div class="container-highlight inner-medium">     
+	<h1>
+		<?php echo esc_html( get_bloginfo( 'description' ) ); ?>
+	</h1>
 </div>

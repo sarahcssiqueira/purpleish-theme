@@ -8,7 +8,7 @@
  */
 
 ?>
-<div class="">
+<div class="container-light inner-medium">
 
 <h1>Our Doctors</h1>
 

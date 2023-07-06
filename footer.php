@@ -10,7 +10,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-?><footer class="container-dark">
+?><footer class="container-dark inner-small">
 <span>
 	Dentist Clinic Theme by 
 	<?php echo ( '&nbsp' ); ?>

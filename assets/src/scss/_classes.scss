@@ -1,9 +1,9 @@
 /* Containers */
-
 .container-light {
     background-color: $light;
     color: $dark;
 }
+
 .container-highlight {
     background-color: $highlight;
     color: $light;
@@ -14,6 +14,17 @@
 }
 
 /* Spacing */
+.inner-small {
+    padding: 1rem;
+}
+
+.inner-medium {
+    padding: 2rem;
+}
+
+.inner-large {
+    padding:5rem 
+}
 
 /* Alignment */
 .center {
@@ -30,7 +41,6 @@
 }
 
 /* Elements */
-
 .header {
 	z-index: 5;
 	background: $light;
@@ -53,15 +63,4 @@
 		font-size: 1rem;
 		text-decoration: none;
 	}
-}
-
-/* Inner */
-
-.inner-section-small {
-	padding: 0.5rem;
-}
-
-.inner-section-large {
-	margin: 2rem;
-	padding: 2rem;
 }

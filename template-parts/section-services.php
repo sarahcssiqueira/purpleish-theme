@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="container-light">
+<div class="container-light inner-medium">
 	<div class="">
 
 	<div class="">
@@ -17,7 +17,6 @@
 	</div>
 
 		<h2>Our Services</h2>
-		<p>Personalized Care</p>
 	   
 		<div class="">
 			<ul class="">
