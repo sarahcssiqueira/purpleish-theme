@@ -1,0 +1,37 @@
+.button-light {
+    display: inline-block;
+    background-color: $light;
+    color: $highlight;
+    border: 1px solid $highlight;
+    border-radius: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    &:hover{
+        cursor: pointer;
+        background-color: $highlight;
+        color: $light;
+        border: 1px solid $light;
+    }
+}
+
+.button-dark {
+    display: inline-block;
+    background-color: $highlight;
+    color: $light;
+    border: 1px solid $light;
+    border-radius: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    &:hover{
+        cursor: pointer;
+        background-color: $light;
+        color: $highlight;
+        border: 1px solid $highlight;
+    }
+}

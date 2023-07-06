@@ -9,6 +9,6 @@
 
 ?>
 
-<div class="container-highlight inner-large">
-	<h2>Book and appointment</h2>
+<div class="container-highlight inner-large center">
+	<button class="button-dark">Book an appointment</button>
 </div>
