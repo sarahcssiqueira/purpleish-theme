@@ -9,19 +9,19 @@
 
 ?>
 
-<div class="inner-section-large">
+<div class="">
 
-	<div class="title-content"> 
+	<div class=""> 
 		<h2> 
 			<?php the_title(); ?>
 		<h2>
 	</div>
 
-	<div class="text-content"> 
+	<div class=""> 
 		<p><?php the_content(); ?></p>
 	</div>
 
-	<div class="button-dark">
+	<div class="">
 		<a href="<?php echo esc_html( get_home_url() ); ?>">
 		Back
 		</a>

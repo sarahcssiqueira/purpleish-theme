@@ -9,8 +9,8 @@
 
 ?>
 
-<div class="container-dark">
-	<div class="inner-section-small">      
+<div class="container-highlight">
+	<div class="">      
 			<section>
 			<h1>
 				<?php echo esc_html( get_bloginfo( 'description' ) ); ?>

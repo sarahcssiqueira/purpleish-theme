@@ -10,17 +10,17 @@
 ?>
 
 <div class="container-light">
-	<div class="inner-section-large">
+	<div class="">
 
-	<div class="iconsDark">
+	<div class="">
 		<i class="fa-solid fa-tooth"></i>
 	</div>
 
 		<h2>Our Services</h2>
 		<p>Personalized Care</p>
 	   
-		<div class="servicesList">
-			<ul class="services">
+		<div class="">
+			<ul class="">
 
 			<?php
 				$args = [

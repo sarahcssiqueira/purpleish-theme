@@ -12,7 +12,7 @@
 
 <?php get_header(); ?>
 
-<div class="containerLight">
+<div class="container-light">
 
 		<h2>About</h2>
 

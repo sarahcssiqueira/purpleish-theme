@@ -10,7 +10,7 @@
 
 ?><?php get_header(); ?>
 
-	<div class="content">
+	<div class="">
 
 		<?php get_template_part( 'template-parts/section', 'heading' ); ?>
 

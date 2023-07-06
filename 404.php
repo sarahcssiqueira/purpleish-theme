@@ -9,7 +9,7 @@
 
 get_header();?>
 
-<div class="postContent">
+<div class="">
 
 		<h1>Page Not Found</h1>
 

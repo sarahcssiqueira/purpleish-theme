@@ -14,7 +14,7 @@
 
 <?php get_header(); ?>
 
-	<div class="containerLight">
+	<div class="container-light">
 
 		<?php
 		if ( have_posts() ) {

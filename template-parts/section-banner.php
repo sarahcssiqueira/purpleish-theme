@@ -9,7 +9,7 @@
 
 ?>
 <div class="banner">
-	<div class="inner-section-large">      
+	<div class="">      
 			<section>
 			<h1>
 			</h1>

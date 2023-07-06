@@ -9,12 +9,11 @@
 
 ?>
 
-<div class="container-dark">
+<div class="container-highlight">
 
-<div class="inner-section-large">
+<div class="">
 
 	<h2>Book and appointment</h2>
-
 
 </div>
 

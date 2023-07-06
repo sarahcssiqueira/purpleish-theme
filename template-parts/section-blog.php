@@ -8,13 +8,13 @@
  */
 
 ?>
-<div class="container-light">
-		<div class="inner-section-large">  
+<div class="">
+		<div class="">  
 
 			<h2>Blog</h2>
 
-			<div class="services-list">
-				<ul class="services">
+			<div class="">
+				<ul class="">
 
 				<?php
 					$args = [
@@ -33,11 +33,11 @@
 
 					<li> 
 						<a href="<?php the_permalink(); ?>">
-											<?php echo esc_html( get_the_title() ); ?>
+							<?php echo esc_html( get_the_title() ); ?>
 						</a>
 					</li>
 
-										<?php
+							<?php
 						}
 					};
 					?>
