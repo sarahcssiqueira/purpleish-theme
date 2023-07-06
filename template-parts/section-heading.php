@@ -9,8 +9,8 @@
 
 ?>
 
-<div class="container-highlight inner-medium">     
+<section class="container-highlight inner-medium">     
 	<h1>
 		<?php echo esc_html( get_bloginfo( 'description' ) ); ?>
 	</h1>
-</div>
+</section>

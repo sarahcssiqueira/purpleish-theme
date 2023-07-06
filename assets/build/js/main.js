@@ -1,3 +1,0 @@
-/*! For license information please see main.js.LICENSE.txt */
-!function(){"use strict";var s={"./assets/src/scss/main.scss":function(s,e,r){r.r(e)}},e={};function r(t){var n=e[t];if(void 0!==n)return n.exports;var o=e[t]={exports:{}};return s[t](o,o.exports,r),o.exports}r.r=function(s){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(s,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(s,"__esModule",{value:!0})};var t={};!function(){r.r(t);r("./assets/src/scss/main.scss")}()}();
-//# sourceMappingURL=main.js.map

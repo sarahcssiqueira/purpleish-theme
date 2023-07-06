@@ -8,8 +8,8 @@
  */
 
 ?>
-<div class="container-light inner-medium">
+<section class="container-light inner-medium">
 
 <h1>Counter</h1>
 
-</div>
+</section>

@@ -46,11 +46,10 @@
 			?>
 		</div>
 
-        <div class="">
-        <button class="button-dark">Book an appointment</button>
-        </div>
+		<div class="">
+		<button class="button-dark">Book an appointment</button>
+		</div>
 			   
 		<div class="header-menu-mobile">
-			<i class="fa-solid fa-bars"></i>
 		</div>
 </header>

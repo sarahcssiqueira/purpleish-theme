@@ -9,6 +9,6 @@
 
 ?>
 
-<div class="container-highlight inner-large center">
+<section class="container-highlight inner-large center">
 	<button class="button-dark">Book an appointment</button>
-</div>
+</section>

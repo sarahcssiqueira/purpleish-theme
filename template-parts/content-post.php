@@ -9,7 +9,7 @@
 
 ?>
 
-<div class="">
+<div class="container-light inner-small">
 
 	<div class=""> 
 		<h2> 
@@ -25,8 +25,8 @@
 	</div>
 
 	<div class="">
-		<a href="<?php echo esc_html( get_home_url() ); ?>">
+		<a href="<?php echo esc_html( get_home_url() ); ?>" class="button-dark">
 		Back Home
 		</a>
-	</div>
+</div>
 </div>

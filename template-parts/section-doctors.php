@@ -8,8 +8,8 @@
  */
 
 ?>
-<div class="container-light inner-medium">
+<section class="container-light inner-medium">
 
 <h1>Our Doctors</h1>
 
-</div>
+</section>
