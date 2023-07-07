@@ -8,6 +8,4 @@
  */
 
 ?>
-<section class="banner inner-large">    
-	<h1></h1>
-</section>
+<section class="banner inner-large"></section>

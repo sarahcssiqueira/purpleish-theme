@@ -1,24 +1,6 @@
-/* Divider */
-
-.divider hr {
-	border-top: 2px solid $light;
-	margin-top: 1rem;
-	margin-bottom: 2rem;
-}
-
-/* Banners */
-
+/* Banner */
 .banner {
-	background-color: $highlight;
 	background-image: url($main-banner);
 	background-size: cover;
-	padding: 5rem;
 	text-align: center;
-	section h1 {
-		font-weight: 400;
-		font-size: 3rem;
-		line-height: 2rem;
-		color: $light;
-		padding: 2rem;
-	}
 }

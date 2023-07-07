@@ -9,6 +9,6 @@
 
 ?>
 
-<section class="container-highlight inner-large center">
+<section class="container-highlight inner-large flex-column">
 	<button class="button-dark">Book an appointment</button>
 </section>

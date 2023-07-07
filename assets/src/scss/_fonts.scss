@@ -4,27 +4,12 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-primary;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	text-align: center;
+    color: $highlight;
 }
 
-h3, h4, h5, h6, p {
+h4, h5, h6, p {
 	text-align: justify;
 }
 
-/* Links */
-
-/* Text */
-
-.title-content {
-	color: $dark;
-	margin-bottom: 2rem;
-	text-align: justify;
-}
-
-.text-content {
-	color: $accent;
-	font-size: $font-medium;
-	margin-bottom: 2rem;
-	text-align: justify;
-}
