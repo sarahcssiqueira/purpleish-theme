@@ -10,20 +10,14 @@
 	width: 50%;
 }
 
-.counter-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	margin: 20px;
-	font-size: 30px;
+.counter-target {
+	color:$highlight;
 }
-  
-.counter-container i {
-	margin: 10px;
-	font-size: 40px;
+
+.counter-icon {
+    color: $highlight;
 }
-  
-.counter-container .counter-target {
-	width: 75px;
-	font-weight: 900;
+
+.counter-info {
+    color: $highlight;
 }

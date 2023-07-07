@@ -8,8 +8,22 @@
  */
 
 ?>
-<section class="container-light inner-medium">
+<section class="container-light inner-medium flex-column">
 
 <h1>Our Doctors</h1>
+
+<div class="counter inner-medium flex">
+
+<div class="flex-column">
+
+</div>
+
+<div class="flex-column">
+
+</div>
+
+<div class="flex-column">
+
+</div>
 
 </section>

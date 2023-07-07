@@ -9,47 +9,33 @@
 
 ?>
 
-<div class="container-light inner-medium">
-	<div class="">
+<div class="container-light inner-medium flex-column">
 
-	<div class="">
-		<i class="fa-solid fa-tooth"></i>
-	</div>
+<h1>Our Services</h1>
 
-		<h2>Our Services</h2>
-	   
-		<div class="">
-			<ul class="">
+<div class="counter inner-medium flex">
 
-			<?php
-				$args = [
-					'post_type'      => 'services',
-					'posts_per_page' => -1,
-				];
+<div class="flex-column">
+	<i class="fa-solid fa-tooth"></i>
+	<p>Personal Care</p>
+</div>
+
+<div class="flex-column">
+	<i class="fa-solid fa-tooth"></i>
+	<p>Teeth Cleaning</p>
+</div>
+
+<div class="flex-column">
+	<i class="fa-solid fa-tooth"></i>
+	<p>Teeth Whitening</p>
+</div>
+
+<div class="flex-column">
+	<i class="fa-solid fa-tooth"></i>
+	<p>Root Canal</p>
+</div>
 
 
-					$post_data = new WP_Query( $args );
+</div>
 
-
-				if ( $post_data->have_posts() ) {
-					while ( $post_data->have_posts() ) {
-
-						$post_data->the_post();
-						?>
-
-					<li> 
-						<a href="<?php the_permalink(); ?>">
-								<?php echo esc_html( get_the_title() ); ?>
-						</a>
-					</li>
-
-									<?php
-					}
-				};
-				?>
-
-				</ul>
-			</div>
-
-		</div>
-	</div>
+</div>

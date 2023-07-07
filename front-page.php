@@ -20,8 +20,6 @@
 
 		<?php get_template_part( 'template-parts/section', 'services' ); ?>
 
-		<?php get_template_part( 'template-parts/section', 'doctors' ); ?>
-
 		<?php get_template_part( 'template-parts/section', 'contact' ); ?>
 
 		</div>
