@@ -2,5 +2,6 @@
 * Imports
 ---------------------------------------------------------------------------- */
 
-@import "./base/reset", "./base/variables", "./fonts", "./classes" , "./nav", "./buttons",
-	"./decor", "./icons", "./grids";
+@import "./base/reset", "./base/variables", "./base/fonts", "./base/classes" , 
+"./components/nav", "./components/buttons","./components/decor", 
+"./components/icons";
