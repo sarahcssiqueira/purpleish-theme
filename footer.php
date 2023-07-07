@@ -10,10 +10,9 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-?><footer class="container-dark inner-small">
+?><footer class="container-dark inner-medium flex-column">
 <span>
-	Dentist Clinic Theme by 
-	<?php echo ( '&nbsp' ); ?>
+	Dentist Clinic Theme by
 	<a href="https://sarahjobs.com/">Sarah Siqueira</a>
 </span>
 <span class="">© 2021 - <?php echo esc_html( gmdate( 'Y' ) ); ?> All rights reserved.
