@@ -8,9 +8,7 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 
-?>
-
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <html <?php language_attributes(); ?>> 
 <head>
 	<title><?php echo esc_html( get_bloginfo( 'name' ) ); ?></title>
@@ -20,36 +18,33 @@
 </head>
 
 <body> 
-<header class="header">
+<header class="container-light inner-small flex">
 
-		<div class="header-title">
-		   
-			<a href="<?php echo esc_html( get_home_url() ); ?>">
-			<?php
-			if ( function_exists( 'the_custom_logo' ) ) {
-					the_custom_logo();
-			}
-			?>
-			</a>
-		</div>
+	<a href="<?php echo esc_html( get_home_url() ); ?>">
+		<?php
+		if ( function_exists( 'the_custom_logo' ) ) {
+			the_custom_logo();
+		}
+		?>
+	</a>
 
-		<div class="header-menu">
-			<?php
-			wp_nav_menu(
-				[
-					'menu'           => 'primary',
-					'container'      => '',
-					'theme_location' => 'primary',
-					'items_wrap'     => '<li>%3$s</li>',
-				]
-			);
-			?>
-		</div>
+	<nav class="nav flex">
+		<?php
+		wp_nav_menu(
+			[
+				'menu'           => 'primary',
+				'container'      => '',
+				'theme_location' => 'primary',
+				'items_wrap'     => '<li>%3$s</li>',
+			]
+		);
+		?>
+	</nav>
 
-		<div class="">
+	<div>
 		<button class="button-dark">Book an appointment</button>
-		</div>
+	</div>
 			   
-		<div class="header-menu-mobile">
-		</div>
+	<div class="header-menu-mobile">
+	</div>
 </header>
