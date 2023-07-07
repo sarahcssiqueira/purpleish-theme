@@ -23,6 +23,14 @@ class Assets {
 			'all'
 		);
 
+		wp_register_style(
+			'font-awesome',
+			'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+			[],
+			$version,
+			'all'
+		);
+
 		wp_register_script(
 			'main-js',
 			DENTIST_DIR_URI . '/assets/build/js/main.js',
@@ -33,6 +41,11 @@ class Assets {
 
 		wp_enqueue_style(
 			'main-css',
+			get_stylesheet_uri()
+		);
+
+		wp_enqueue_style(
+			'font-awesome',
 			get_stylesheet_uri()
 		);
 

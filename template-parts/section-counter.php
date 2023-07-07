@@ -8,8 +8,13 @@
  */
 
 ?>
-<section class="container-light inner-medium">
+<section class="container-light inner-medium flex-column">
 
-<h1>Counter</h1>
+<h1>Why Choose Us</h1>
+<div class="inner-medium flex">
+<li>heart</li>
+<li>heart</li>
+<li>heart</li>
+</div>
 
 </section>
