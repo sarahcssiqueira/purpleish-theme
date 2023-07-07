@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying a counter details.
+ * Template part for displaying counter section.
  *
  * @package dentist_theme
  *

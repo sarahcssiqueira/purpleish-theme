@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-		<div class="post-content">
+		<main class="post-content">
 
 			<?php
 			if ( have_posts() ) {
@@ -24,6 +24,6 @@ get_header(); ?>
 
 			?>
 
-		</div>
+		</main>
 
 <?php get_footer(); ?>

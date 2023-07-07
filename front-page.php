@@ -10,7 +10,7 @@
 
 ?><?php get_header(); ?>
 
-	<div>
+	<main>
 
 		<?php get_template_part( 'template-parts/section', 'heading' ); ?>
 
@@ -22,6 +22,6 @@
 
 		<?php get_template_part( 'template-parts/section', 'contact' ); ?>
 
-		</div>
+</main>
 
 <?php get_footer(); ?>

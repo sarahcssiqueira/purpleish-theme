@@ -12,10 +12,10 @@
 
 <?php get_header(); ?>
 
-<div class="container-light">
+<main class="container-light">
 
-		<h2>About</h2>
+	<h2>About</h2>
 
-</div>
+</main>
 
 <?php get_footer(); ?>

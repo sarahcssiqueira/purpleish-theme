@@ -27,8 +27,14 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+
+main {
+    min-height:80vh;
+}
+
 body {
 	line-height: 1;
+    min-height:80vh;
 }
 ol, ul {
 	list-style: none;
