@@ -4,3 +4,26 @@
 	background-size: cover;
 	text-align: center;
 }
+
+/* Counter */
+.counter {
+	width: 50%;
+}
+
+.counter-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 20px;
+	font-size: 30px;
+}
+  
+.counter-container i {
+	margin: 10px;
+	font-size: 40px;
+}
+  
+.counter-container .counter-target {
+	width: 75px;
+	font-weight: 900;
+}

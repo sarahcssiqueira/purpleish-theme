@@ -15,15 +15,15 @@
 
 /* Flex */
 .flex {
-    display: flex;
+	display: flex;
 	align-items: center;
-    justify-content: space-between;
+	justify-content: space-evenly;
 }
 
 .flex-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
 /* Spacing */
