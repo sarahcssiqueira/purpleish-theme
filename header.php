@@ -20,26 +20,29 @@
 <body> 
 <header class="container-light inner-small flex">
 
-	<a href="<?php echo esc_html( get_home_url() ); ?>">
 		<?php
 		if ( function_exists( 'the_custom_logo' ) ) {
 			the_custom_logo();
 		}
 		?>
-	</a>
 
-	<nav class="nav flex">
-		<?php
-		wp_nav_menu(
-			[
-				'menu'           => 'primary',
-				'container'      => '',
-				'theme_location' => 'primary',
-				'items_wrap'     => '<li>%3$s</li>',
-			]
-		);
-		?>
-	</nav>
+	<?php
+
+	wp_nav_menu(
+		[
+			'menu'            => 'primary',
+			'menu_id'         => 'nav', // %1$s
+			'menu_class'      => 'nav flex', // %2$s ... %3$s the list itemns
+			'container'       => 'nav',
+			'container_class' => 'nav flex',
+			'theme_location'  => 'primary',
+			'items_wrap'      => '<ul class="%2$s" id="%1$s">%3$s</ul>',
+			'walker'          => new nav_walker(),
+
+		]
+	)
+
+	?>
 
 	<div>
 		<button class="button-dark">Book an appointment</button>
