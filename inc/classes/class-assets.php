@@ -10,6 +10,7 @@ class Assets {
 	function __construct() {
 
 		add_action( 'wp_enqueue_scripts', [ $this, 'dentist_enqueues' ] );
+
 	}
 
 	function dentist_enqueues() {
@@ -52,6 +53,19 @@ class Assets {
 		wp_enqueue_script(
 			'main-js'
 		);
+
+        wp_register_style(
+			'google-fonts',
+			'https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap',
+			[],
+			$version,
+			'all'
+		);
+
+        wp_enqueue_style(
+            'google-fonts',
+            get_stylesheet_uri()
+        );
 	}
 
 }

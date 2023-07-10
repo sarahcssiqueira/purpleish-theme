@@ -1,14 +1,5 @@
-/* Text */
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: $font-primary;
-}
-
-h1, h2, h3 {
-	text-align: center;
-	color: $highlight;
-}
-
-h4, h5, h6, p {
-	text-align: justify;
+@font-face { 
+    font-family: Aguafina Script-Regular; 
+    src: url(http://test-site.com/wp-content/themes/twentynineteen/fonts/AguafinaScript-Regular.ttf); 
+    font-weight: normal; 
 }
