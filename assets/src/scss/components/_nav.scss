@@ -4,21 +4,7 @@
 
 @media screen and (min-width: $phone) {
 
-	.nav-menu {
-		display: block;
-	
-		&_list {
-			display: flex;
-			flex-direction: row;
-			margin: 0.5rem;
-	
-			&_item {
-				padding: 0.5rem;
-			}
-		}
-	}
-
-	.nav-menu-mobile {
+	.nav-mobile {
 		display: none;
 	}
 
@@ -33,9 +19,9 @@
         display: none;
     }
 
-	.nav-menu {
-		display: none;
-	}
+    .nav-mobile {
+        display: block;
+    }
 
 	.mobile-button {
 		display: block;
@@ -55,6 +41,9 @@
 
 	.active .bar:nth-child(1){
 		transform: translateY(8px) rotate(45deg);
+        background-color: $light;
+        position: relative;
+        z-index: 2;
 	}
 	
 	.active .bar:nth-child(2){
@@ -63,28 +52,32 @@
 
 	.active .bar:nth-child(3){
 		transform: translateY(-8px) rotate(-45deg);
+        background-color: $light;
+        position: relative;
+        z-index: 2;
 	}
 
-	.nav-menu-mobile {
+	.nav-mobile {
 		position: fixed;
-		z-index: 1;
 		right: -100%;
-		top:80px;
+		top:0px;
 		width: 100%;
-		font-size: 1.2em;
 		transition: 0.3s;
 		background: $highlight;
 		
 		&_list {
 			display: flex;
 			flex-direction: column;
+            justify-content: center;
+            align-items: center;
 			margin: 0.5rem;
 			padding: 1rem;
-			align-items: center;
-
+			
 			&_item {
+                color: $light;
 				padding: 1rem;
 			}
 		}
 	}
+    
 }
