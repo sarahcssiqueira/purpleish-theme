@@ -21,5 +21,3 @@ export default function counterFunction() {
 		updateCounter();
 	});
 }
-
-console.log('hello from the counter');

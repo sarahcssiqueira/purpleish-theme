@@ -14,5 +14,3 @@ export default function Menu() {
 			: ( button.classList.value = 'mobile-button active' );
 	} );
 }
-
-console.log('hello from menu');

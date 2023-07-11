@@ -25,6 +25,6 @@ class Menus {
 
 
 	function register_navwalker() {
-		include DENTIST_DIR_PATH . '/inc/nav-walker.php';
+		include DENTIST_DIR_PATH . '/inc/utils/nav-walker.php';
 	}
 }
