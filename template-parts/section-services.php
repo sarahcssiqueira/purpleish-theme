@@ -11,28 +11,28 @@
 
 <div class="container-light inner-medium flex-column">
 
-<h1>Our Services</h1>
+<h1 class="section-title">Our Services</h1>
 
 <div class="counter inner-medium flex">
 
-<div class="flex-column">
-	<i class="fa-solid fa-tooth"></i>
-	<p>Personal Care</p>
+<div class="flex-column inner-small">
+	<i class=" services-icon fa-solid fa-tooth"></i>
+	<h3>Personal Care</h3>
 </div>
 
-<div class="flex-column">
-	<i class="fa-solid fa-tooth"></i>
-	<p>Teeth Cleaning</p>
+<div class="flex-column inner-small">
+	<i class="services-icon fa-solid fa-tooth"></i>
+	<h3>Teeth Cleaning</h3>
 </div>
 
-<div class="flex-column">
-	<i class="fa-solid fa-tooth"></i>
-	<p>Teeth Whitening</p>
+<div class="flex-column inner-small">
+	<i class="services-icon fa-solid fa-tooth"></i>
+	<h3>Teeth Whitening</h3>
 </div>
 
-<div class="flex-column">
-	<i class="fa-solid fa-tooth"></i>
-	<p>Root Canal</p>
+<div class="flex-column inner-small">
+	<i class="services-icon fa-solid fa-tooth"></i>
+	<h3>Root Canal</h3>
 </div>
 
 

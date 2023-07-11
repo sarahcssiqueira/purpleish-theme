@@ -20,6 +20,13 @@
 	justify-content: space-evenly;
 }
 
+@media screen and (max-width:$phone-small) {
+    .flex {
+       display: flexbox;
+       flex-wrap: wrap;
+    }
+}
+
 .flex-column {
 	display: flex;
 	align-items: center;

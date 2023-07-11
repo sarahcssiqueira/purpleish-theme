@@ -10,7 +10,7 @@
 ?>
 
 <section class="container-highlight inner-medium">     
-	<h1 class="container-highlight">
+	<h1 class="container-highlight heading">
 		<?php echo esc_html( get_bloginfo( 'description' ) ); ?>
 	</h1>
 </section>
