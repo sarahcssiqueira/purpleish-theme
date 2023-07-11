@@ -2,14 +2,14 @@
   "name": "dentist-theme",
   "version": "1.0.0",
   "description": "wordpress theme made for dentist clinics projects",
-  "main": "assets/build/js/main.js",
+  "main": "assets/build/js/index.js",
   "scripts": {
     "prod": "cross-env NODE_ENV=production webpack --mode production --progress",
     "dev": "cross-env NODE_ENV=development webpack --watch --mode development --progress",
     "clean": "rm -rf assets/build/*",
     "svg": "svgr -d assets/src/js/icons assets/src/icons",
     "lint": "eslint assets/src/js/*",
-    "lint:fix": "eslint --fix assets/src/js/*",
+    "lint:fix": "npm run lint --fix",
     "lint-css": "stylelint assets/src/scss/*.scss",
     "lint-css:fix": "npm run lint-css -- --fix",
     "build": "npm run lint-css:fix && npm run lint:fix && npm run prod"

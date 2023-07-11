@@ -12,12 +12,11 @@ const DependencyExtractionWebpackPlugin = require( "@wordpress/dependency-extrac
 
 const JS_DIR  = path.resolve( __dirname, "assets/src/js" );
 const IMG_DIR = path.resolve( __dirname, "assets/src/img" );
-// const LIB_DIR = path.resolve(__dirname, "src/lib");
+const LIB_DIR = path.resolve(__dirname, "assets/src/lib");
 const BUILD_DIR = path.resolve( __dirname, "assets/build" );
 
 const entry = {
-	main: JS_DIR + "/main.js",
-	menu: JS_DIR + "/menu.js",
+	main: JS_DIR + "/index.js",
 };
 
 const output = {
@@ -38,9 +37,11 @@ new MiniCssExtractPlugin(
 	}
 ),
 
-  /*new CopyPlugin({
-	patterns: [{ from: LIB_DIR, to: BUILD_DIR + "/library" }],
-  }), */
+  new CopyPlugin({
+	patterns: [
+        { from: LIB_DIR, to: BUILD_DIR + "/lib" }
+    ],
+  }), 
 
 new DependencyExtractionWebpackPlugin(
 	{

@@ -22,4 +22,4 @@ export default function counterFunction() {
 	});
 }
 
-//console.log('hello counter');
+console.log('hello from the counter');
