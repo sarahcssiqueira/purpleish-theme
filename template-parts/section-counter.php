@@ -8,34 +8,34 @@
  */
 
 ?>
-<section class="container-light inner-medium flex-column">
+<section class="container-light inner-large flex-column">
 
-<h1>Why Choose Us</h1>
+<h1 class="section-title">Why Choose Us</h1>
 
 <div class="counter inner-medium flex">
 
-<div class="flex-column">
+<div class="flex-column inner-small">
 	<div class="flex">
 		<p class="counter-target" data-target="40"></p>
 		<i class="counter-icon fa-solid fa-plus"></i>
 	</div>
-	<p class="counter-info">procedures</p>
+	<h3>procedures</h3>
 </div>
 
-<div class="flex-column">
+<div class="flex-column inner-small">
 	<div class="flex">
 		<div class="counter-target" data-target="30"></div>
 		<i class="counter-icon fa-solid fa-plus"></i>
 	</div>
-	<p class="counter-info">doctors</p>
+	<h3 >doctors</h3>
 </div>
 
-<div class="flex-column">
+<div class="flex-column inner-small">
 	<div class="flex">
 		<div class="counter-target" data-target="25"></div>
 		<i class="counter-icon fa-solid fa-plus"></i>
 	</div>
-	<p class="counter-info">cities</p>
+	<h3>cities</h3>
 </div>
 
 </div>

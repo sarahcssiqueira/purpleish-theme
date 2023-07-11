@@ -5,19 +5,17 @@
 	text-align: center;
 }
 
-/* Counter */
-.counter {
+/* Counter  & Services */
+.counter, .services {
 	width: 50%;
 }
 
 .counter-target {
 	color:$highlight;
+    font-size: 2.5rem;
 }
 
-.counter-icon {
+.counter-icon, .services-icon {
     color: $highlight;
-}
-
-.counter-info {
-    color: $highlight;
+    font-size: 2rem;
 }
