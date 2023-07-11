@@ -1,7 +1,7 @@
 <?php
 /**
  * The header
- * This is the template that displays all of the <head> section and everything up until <div id="content">
+ * This is the template that displays all of the <head> section
  *
  * @package dentist_theme
  *
@@ -20,14 +20,13 @@
 <body> 
 <header class="container-light inner-small flex">
 
-		<?php
-		if ( function_exists( 'the_custom_logo' ) ) {
-			the_custom_logo();
-		}
-		?>
+	<?php
+	if ( function_exists( 'the_custom_logo' ) ) {
+		the_custom_logo();
+	}
+	?>
 
 	<?php
-
 	wp_nav_menu(
 		[
 			'menu'            => 'primary',
@@ -41,40 +40,32 @@
 
 		]
 	)
-
 	?>
 
 	<div>
-		<button class="button-dark">Book an appointment</button>
+		<button class="button-dark button-header">Book an appointment</button>
 	</div>
-			   
 
-	<div class="header-menu-mobile">
-
-	<?php
-
-	wp_nav_menu(
-		[
-			'menu'            => 'mobile',
-			'menu_id'         => 'nav-mobile', // %1$s
-			'menu_class'      => 'nav-menu-mobile_list', // %2$s ... %3$s the list itemns
-			'container'       => 'nav',
-			'container_class' => 'nav-menu-mobile',
-			'container_id'    => 'menu-mobile',
-			'theme_location'  => 'mobile',
-			/* Aditional class customization */
-			'add_li_class'    => 'test',
-			'items_wrap'      => '<ul class="%2$s" id="%1$s">%3$s</ul>',
-			'walker'          => new nav_walker_mobile(),
-
-		]
-	)
-
-	?>
 	<div class="mobile-button" id="toogle-button">
-				<div class="bar"></div>
-				<div class="bar"></div>
-				<div class="bar"></div>
-			</div>
+		<div class="bar"></div>
+		<div class="bar"></div>
+		<div class="bar"></div>
+
+		<?php
+		wp_nav_menu(
+			[
+				'menu'            => 'mobile',
+				'menu_id'         => 'nav-mobile', // %1$s
+				'menu_class'      => 'nav-mobile', // %2$s ... %3$s the list itemns
+				'container'       => 'nav',
+				'container_class' => 'nav-mobile',
+				'theme_location'  => 'mobile',
+				'items_wrap'      => '<ul class="%2$s" id="%1$s">%3$s</ul>',
+				'walker'          => new nav_walker_mobile(),
+
+			]
+		)
+		?>
 	</div>
+
 </header>

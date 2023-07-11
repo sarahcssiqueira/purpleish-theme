@@ -17,6 +17,7 @@ class Menus {
 		$locations = [
 			'primary' => 'Primary Menu',
 			'footer'  => 'Footer Menu',
+            'mobile' => 'Mobile Menu'
 		];
 
 		register_nav_menus( $locations );

@@ -35,3 +35,10 @@
 		border: 1px solid $highlight;
 	}
 }
+
+@media screen and (max-width: $phone-small) {
+ 
+   .button-header {
+        display: none;
+ }
+}
