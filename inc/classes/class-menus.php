@@ -2,18 +2,18 @@
 /**
  * Register Menus
  *
- * @package dentist_theme
+ * @package purpleish_theme
  *
  */
 
 class Menus {
 
 	function __construct() {
-		add_action( 'init', [ $this, 'dentist_register_menus' ] );
+		add_action( 'init', [ $this, 'purpleish_register_menus' ] );
 		add_action( 'after_setup_theme', [ $this, 'register_navwalker' ] );
 	}
 
-	function dentist_register_menus() {
+	function purpleish_register_menus() {
 		$locations = [
 			'primary' => 'Primary Menu',
 			'footer'  => 'Footer Menu',
@@ -25,6 +25,6 @@ class Menus {
 
 
 	function register_navwalker() {
-		include DENTIST_DIR_PATH . '/inc/utils/nav-walker.php';
+		include PURPLEISH_DIR_PATH . '/inc/utils/nav-walker.php';
 	}
 }

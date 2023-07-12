@@ -2,23 +2,23 @@
 /**
  * Enqueue Styles and Scripts
  *
- * @package dentist_theme
+ * @package purpleish_theme
  */
 
 class Assets {
 
 	function __construct() {
 
-		add_action( 'wp_enqueue_scripts', [ $this, 'dentist_enqueues' ] );
+		add_action( 'wp_enqueue_scripts', [ $this, 'purpleish_enqueues' ] );
 
 	}
 
-	function dentist_enqueues() {
+	function purpleish_enqueues() {
 		$version = wp_get_theme()->get( 'Version' );
 
 		wp_register_style(
 			'main-css',
-			DENTIST_DIR_URI . '/assets/build/css/main.css',
+			PURPLEISH_DIR_URI . '/assets/build/css/main.css',
 			[],
 			$version,
 			'all'
@@ -34,7 +34,7 @@ class Assets {
 
 		wp_register_script(
 			'main-js',
-			DENTIST_DIR_URI . '/assets/build/js/main.js',
+			PURPLEISH_DIR_URI . '/assets/build/js/main.js',
 			[],
 			$version,
 			true
@@ -56,7 +56,7 @@ class Assets {
 
         wp_register_style(
 			'google-fonts',
-			'https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Quicksand:wght@400;500;600;700&display=swap',
+			'href="https://fonts.googleapis.com/css2?family=Fasthand&family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap',
 			[],
 			$version,
 			'all'

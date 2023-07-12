@@ -10,18 +10,18 @@
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  */
 
-if ( ! defined( 'DENTIST_DIR_PATH' ) ) {
-	define( 'DENTIST_DIR_PATH', untrailingslashit( get_template_directory() ) );
+if ( ! defined( 'PURPLEISH_DIR_PATH' ) ) {
+	define( 'PURPLEISH_DIR_PATH', untrailingslashit( get_template_directory() ) );
 }
 
-if ( ! defined( 'DENTIST_DIR_URI' ) ) {
-	define( 'DENTIST_DIR_URI', untrailingslashit( get_template_directory_uri() ) );
+if ( ! defined( 'PURPLEISH_DIR_URI' ) ) {
+	define( 'PURPLEISH_DIR_URI', untrailingslashit( get_template_directory_uri() ) );
 }
 
 /*
  * Enqueue Styles and Scripts
  */
-require DENTIST_DIR_PATH . '/inc/classes/class-assets.php';
+require PURPLEISH_DIR_PATH . '/inc/classes/class-assets.php';
 
 $assets = new Assets();
 
@@ -29,7 +29,7 @@ $assets = new Assets();
  * Add theme suppports
  */
 
-require DENTIST_DIR_PATH . '/inc/classes/class-theme-supports.php';
+require PURPLEISH_DIR_PATH . '/inc/classes/class-theme-supports.php';
 
 $supports = new Supports();
 
@@ -38,6 +38,6 @@ $supports = new Supports();
  * Register menus
  */
 
-require DENTIST_DIR_PATH . '/inc/classes/class-menus.php';
+require PURPLEISH_DIR_PATH . '/inc/classes/class-menus.php';
 
 $menus = new Menus();

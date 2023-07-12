@@ -12,18 +12,14 @@
 <div class="container-light inner-medium">
 	<div class="">
 
-	<div class="">
-		<i class="fa-solid fa-tooth"></i>
-	</div>
-
-		<h2>Our Services</h2>
+		<h2>Custom Post Types</h2>
 	   
 		<div class="">
 			<ul class="">
 
 			<?php
 				$args = [
-					'post_type'      => 'services',
+					'post_type'      => 'cpt',
 					'posts_per_page' => -1,
 				];
 

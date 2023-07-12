@@ -10,7 +10,7 @@
 ?>
 <section class="container-light inner-large flex-column">
 
-<h1 class="section-title">Why Choose Us</h1>
+<h1 class="section-title">About Us</h1>
 
 <div class="counter inner-medium flex">
 
@@ -19,7 +19,7 @@
 		<p class="counter-target" data-target="40"></p>
 		<i class="counter-icon fa-solid fa-plus"></i>
 	</div>
-	<h3>procedures</h3>
+	<h3>lorem</h3>
 </div>
 
 <div class="flex-column inner-small">
@@ -27,7 +27,7 @@
 		<div class="counter-target" data-target="30"></div>
 		<i class="counter-icon fa-solid fa-plus"></i>
 	</div>
-	<h3 >doctors</h3>
+	<h3>lorem</h3>
 </div>
 
 <div class="flex-column inner-small">
@@ -35,7 +35,7 @@
 		<div class="counter-target" data-target="25"></div>
 		<i class="counter-icon fa-solid fa-plus"></i>
 	</div>
-	<h3>cities</h3>
+	<h3>lorem</h3>
 </div>
 
 </div>

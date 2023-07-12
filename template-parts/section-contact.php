@@ -10,5 +10,5 @@
 ?>
 
 <section class="container-highlight inner-large flex-column">
-	<button class="button-dark">Book an appointment</button>
+	<button class="button-dark">Call to Action</button>
 </section>

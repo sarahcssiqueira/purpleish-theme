@@ -23,9 +23,4 @@
 		<p> <?php the_content(); ?> </p>
 	</div>
 
-	<div class="">
-		<a href="<?php echo esc_html( get_home_url() ); ?>">
-		Back Home
-		</a>
-	</div>
 </div>

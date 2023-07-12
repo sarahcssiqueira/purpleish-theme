@@ -43,7 +43,7 @@
 	?>
 
 	<div>
-		<button class="button-dark button-header">Book an appointment</button>
+		<button class="button-dark button-header">Call to Action</button>
 	</div>
 
 	<div class="mobile-button" id="toogle-button">

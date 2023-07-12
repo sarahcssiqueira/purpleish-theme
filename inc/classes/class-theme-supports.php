@@ -2,7 +2,7 @@
 /**
  * Theme Supports
  *
- * @package dentist_theme
+ * @package purpleish_theme
  */
 
 class Supports {
