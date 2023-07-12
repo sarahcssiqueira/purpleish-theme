@@ -1,8 +1,8 @@
 {
-  "name": "sarahcssiqueira/dentist-theme",
+  "name": "sarahcssiqueira/purpleish-theme",
   "autoload": {
     "psr-4": {
-      "DentistTheme\\": ""
+      "PurpleIshTheme\\": ""
     }
   },
   "scripts": {

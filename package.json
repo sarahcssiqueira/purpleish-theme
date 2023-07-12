@@ -1,7 +1,7 @@
 {
-  "name": "dentist-theme",
+  "name": "purpleish-theme",
   "version": "1.0.0",
-  "description": "wordpress theme made for dentist clinics projects",
+  "description": "purpleish wordpress theme",
   "main": "assets/build/js/index.js",
   "scripts": {
     "prod": "cross-env NODE_ENV=production webpack --mode production --progress",
@@ -18,7 +18,7 @@
     "wordpress",
     "themes"
   ],
-  "author": "Sarah Siqueira",
+  "author": "sarahcssiqueira",
   "license": "GPLv2",
   "private": true,
   "browserslist": [

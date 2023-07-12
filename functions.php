@@ -3,7 +3,7 @@
  * Theme Functions.
  *
  * @category Functions
- * @package  dentist_theme
+ * @package purpleish_theme
  * @author   sarahcssiqueira
  * @license  https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html GPL
  *

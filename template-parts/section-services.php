@@ -2,7 +2,7 @@
 /**
  * Template part for displaying services section
  *
- * @package dentist_theme
+ * @package purpleish_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */

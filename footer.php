@@ -3,7 +3,7 @@
  *
  * The template for displaying the footer.
  *
- * @package dentist_theme
+ * @package purpleish_theme
  *
  * Contains the closing of the #content div and all content after.
  *
@@ -12,7 +12,7 @@
 
 ?><footer class="container-dark inner-medium flex-column">
 <span>
-	Dentist Clinic Theme by
+	PurpleIsh Theme by
 	<a href="https://sarahjobs.com/">Sarah Siqueira</a>
 </span>
 <span class="">© 2021 - <?php echo esc_html( gmdate( 'Y' ) ); ?> All rights reserved.

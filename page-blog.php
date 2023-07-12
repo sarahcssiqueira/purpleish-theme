@@ -3,7 +3,7 @@
  *
  * This is the template that displays the blog page.
  *
- * @package dentist_theme
+ * @package purpleish_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */

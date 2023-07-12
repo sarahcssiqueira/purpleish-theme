@@ -2,7 +2,7 @@
 /**
  * Template part for displaying archives.
  *
- * @package dentist_theme
+ * @package purpleish_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */

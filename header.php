@@ -3,7 +3,7 @@
  * The header
  * This is the template that displays all of the <head> section
  *
- * @package dentist_theme
+ * @package purpleish_theme
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */

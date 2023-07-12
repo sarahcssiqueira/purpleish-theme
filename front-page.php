@@ -3,7 +3,7 @@
  *
  * The template for displaying a static front page.
  *
- * @package dentist_theme
+ * @package purpleish_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */

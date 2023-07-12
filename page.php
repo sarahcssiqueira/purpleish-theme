@@ -4,7 +4,7 @@
  *
  * This is the template that displays all pages by default.
  *
- * @package dentist_theme
+ * @package purpleish_theme
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
