@@ -10,7 +10,7 @@
 ?>
 <section class="container-light inner-large flex-column">
 
-<div class="counter inner-medium flex">
+<div class="counter flex">
 
 <div class="flex-column inner-small">
 	<div class="flex">
@@ -31,6 +31,14 @@
 <div class="flex-column inner-small">
 	<div class="flex">
 		<div class="counter-target" data-target="300"></div>
+		<i class="counter-icon fa-solid fa-plus"></i>
+	</div>
+	<h3>lorem</h3>
+</div>
+
+<div class="flex-column inner-small">
+	<div class="flex">
+		<div class="counter-target" data-target="200"></div>
 		<i class="counter-icon fa-solid fa-plus"></i>
 	</div>
 	<h3>lorem</h3>
