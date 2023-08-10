@@ -1,0 +1,51 @@
+/* Containers */
+.container-light {
+	background-color:$light;
+	color: $dark;
+}
+
+.container-highlight {
+	background-color: $highlight;
+	color: $light;
+}
+.container-dark {
+	background-color:$dark;
+	color: $light;
+}
+
+.container-grad {
+    background-image: linear-gradient(180deg, $highlight, #6203ad, #8b06cb, #b30ceb)
+}
+
+/* Flex */
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media screen and (max-width:$phone-small) {
+    .flex {
+       display: flexbox;
+       flex-wrap: wrap;
+    }
+}
+
+.flex-column {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+/* Spacing */
+.inner-small {
+	padding: 1rem;
+}
+
+.inner-medium {
+	padding: 2rem;
+}
+
+.inner-large {
+	padding:5rem 
+}

@@ -1,0 +1,38 @@
+.grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: 1em;
+    grid-template-areas:
+        'one two three'
+}
+
+@media screen and (max-width:$phone) {
+    .grid {
+        display: grid;
+        grid-auto-columns: 1fr;
+        gap: 1em;
+        grid-template-areas:
+            'one two'
+    }
+}
+@media screen and (max-width:$phone-small) {
+    .grid {
+        display: grid;
+        grid-auto-columns: 1fr;
+        gap: 1em;
+        grid-template-areas:
+            'one'
+    }
+}
+
+.grid-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b30ceb;
+}
+
+.grid-item:hover {
+    background-color: #b30ceb;
+}

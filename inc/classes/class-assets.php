@@ -18,7 +18,7 @@ class Assets {
 
 		wp_register_style(
 			'main-css',
-			PURPLEISH_DIR_URI . '/assets/build/css/main.css',
+			PURPLEISH_DIR_URI . '/dist/css/main.css',
 			[],
 			$version,
 			'all'
@@ -34,7 +34,7 @@ class Assets {
 
 		wp_register_script(
 			'main-js',
-			PURPLEISH_DIR_URI . '/assets/build/js/main.js',
+			PURPLEISH_DIR_URI . '/dist/js/main.js',
 			[],
 			$version,
 			true
@@ -54,7 +54,7 @@ class Assets {
 			'main-js'
 		);
 
-        wp_register_style(
+		wp_register_style(
 			'google-fonts',
 			'href="https://fonts.googleapis.com/css2?family=Fasthand&family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap',
 			[],
@@ -62,10 +62,10 @@ class Assets {
 			'all'
 		);
 
-        wp_enqueue_style(
-            'google-fonts',
-            get_stylesheet_uri()
-        );
+		wp_enqueue_style(
+			'google-fonts',
+			get_stylesheet_uri()
+		);
 	}
 
 }

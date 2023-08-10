@@ -3,7 +3,6 @@
  * Register Menus
  *
  * @package purpleish_theme
- *
  */
 
 class Menus {
@@ -17,7 +16,7 @@ class Menus {
 		$locations = [
 			'primary' => 'Primary Menu',
 			'footer'  => 'Footer Menu',
-            'mobile' => 'Mobile Menu'
+			'mobile'  => 'Mobile Menu',
 		];
 
 		register_nav_menus( $locations );

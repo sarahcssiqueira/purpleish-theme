@@ -7,12 +7,12 @@
 
 class Supports {
 
-	function __construct() {
+	public function __construct() {
 
 		add_action( 'after_setup_theme', [ $this, 'theme_support' ] );
 	}
 
-	function theme_support() {
+	public function theme_support() {
 
 		add_theme_support( 'title-tag' );
 
@@ -24,7 +24,7 @@ class Supports {
 					'site-description',
 				],
 				'height'      => 100,
-				'width'       => 400,
+				'width'       => 200,
 				'flex-height' => true,
 				'flex-width'  => true,
 			]

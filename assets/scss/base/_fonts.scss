@@ -1,0 +1,25 @@
+/* Text */
+h1, h2, h3 {
+    font-family: $font-primary;
+	text-align: center;
+	color: $highlight;
+}
+
+h4, h5, h6, p, span {
+    font-family: $font-secondary;
+	text-align: justify;
+}
+
+a {
+    font-family: $font-secondary;
+    color: $highlight;
+}
+
+.heading {
+    font-size: 2.5rem;
+    color:$light;
+}
+
+.section-title {
+    font-size: 2rem;
+}

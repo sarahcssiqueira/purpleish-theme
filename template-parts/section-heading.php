@@ -9,8 +9,8 @@
 
 ?>
 
-<section class="container-highlight inner-medium">     
-	<h1 class="container-highlight heading">
+<section class="container-grad inner-large">
+	<h1 class="heading inner-large">
 		<?php echo esc_html( get_bloginfo( 'description' ) ); ?>
 	</h1>
 </section>

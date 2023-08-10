@@ -8,42 +8,34 @@
  */
 
 ?>
-<div class="">
-		<div class="">  
+<div class="inner-large">
 
-			<h2>Blog</h2>
+	<div class="grid">
 
-			<div class="">
-				<ul class="">
+		<?php
+			$args = [
+				'post_type'      => 'post',
+				'posts_per_page' => 3,
+			];
 
-				<?php
-					$args = [
-						'post_type'      => 'post',
-						'posts_per_page' => -1,
-					];
+			$post_data = new WP_Query( $args );
 
-					$post_data = new WP_Query( $args );
+			if ( $post_data->have_posts() ) {
+				while ( $post_data->have_posts() ) {
 
-
-					if ( $post_data->have_posts() ) {
-						while ( $post_data->have_posts() ) {
-
-							$post_data->the_post();
-							?>
-
-					<li> 
-						<a href="<?php the_permalink(); ?>">
-							<?php echo esc_html( get_the_title() ); ?>
-						</a>
-					</li>
-
-							<?php
-						}
-					};
+						$post_data->the_post();
 					?>
 
-				</ul>
+			<div class="grid-item inner-small"> 
+				<h2 class="inner-small"><a href="<?php the_permalink(); ?>"><?php echo esc_html( get_the_title() ); ?></a></h2>
+				<p><?php the_excerpt(); ?></p>
+				<a href="<?php the_permalink(); ?>" class="inner-small">Read More</a>
 			</div>
 
+					<?php
+				}
+			};
+			?>
+
 		</div>
-	</div>
+</div>

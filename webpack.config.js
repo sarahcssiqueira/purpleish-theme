@@ -9,9 +9,9 @@ const TerserJsPlugin = require("terser-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const CopyPlugin = require("copy-webpack-plugin");
 
-const JS_DIR = path.resolve(__dirname, "assets/src/js");
-const IMG_DIR = path.resolve(__dirname, "assets/src/img");
-const BUILD_DIR = path.resolve(__dirname, "build");
+const JS_DIR = path.resolve(__dirname, "assets/js");
+const IMG_DIR = path.resolve(__dirname, "assets/img");
+const BUILD_DIR = path.resolve(__dirname, "dist");
 
 const entry = {
   main: JS_DIR + "/index.js",

@@ -10,8 +10,6 @@
 ?>
 <section class="container-light inner-large flex-column">
 
-<h1 class="section-title">About Us</h1>
-
 <div class="counter inner-medium flex">
 
 <div class="flex-column inner-small">

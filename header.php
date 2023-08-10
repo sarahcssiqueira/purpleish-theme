@@ -18,7 +18,7 @@
 </head>
 
 <body> 
-<header class="container-light inner-small flex">
+<header class="container-highlight inner-small flex">
 
 	<?php
 	if ( function_exists( 'the_custom_logo' ) ) {
@@ -41,10 +41,6 @@
 		]
 	)
 	?>
-
-	<div>
-		<button class="button-dark button-header">Call to Action</button>
-	</div>
 
 	<div class="mobile-button" id="toogle-button">
 		<div class="bar"></div>
