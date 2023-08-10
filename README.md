@@ -8,6 +8,9 @@
 
 **PurpleIsh WordPress theme** wit a simple WordPress classic theme.
 
+![screenshot (2)](https://github.com/sarahcssiqueira/purpleish-theme/assets/82296194/03c2ef53-0e21-4d8c-9469-126d3b123d66)
+
+
 ## Usage
 
 [TO DO]
