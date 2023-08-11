@@ -6,7 +6,7 @@
         'one two three'
 }
 
-@media screen and (max-width:$phone) {
+@media screen and (max-width:$tablet) {
     .grid {
         display: grid;
         grid-auto-columns: 1fr;
@@ -27,11 +27,17 @@
 .grid-item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
+    background-color: $light;
+    &_list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .grid-item:hover {
     background-color: #bd17ff0e;
 }
+
+

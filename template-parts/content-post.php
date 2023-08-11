@@ -7,26 +7,15 @@
  * @link https://codex.wordpress.org/Template_Hierarchy
  */
 
-?>
-
-<div class="container-light inner-small">
-
-	<div class=""> 
+?><div class="inner-medium"> 
 		<h2 class="section-title"> 
-			<a href="
-				<?php the_permalink(); ?>">
-				<?php the_title(); ?>
-			</a> 
-		<h2>
+			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> 
+		</h2>
+
+	<p class="date inner-small"><?php echo get_the_date(); ?></p>
+
+	<div class="inner-small"><p><?php the_content(); ?></p>
 	</div>
 
-	<div class=""> 
-		<p> <?php the_content(); ?> </p>
-	</div>
+</div>
 
-	<div class="">
-		<a href="<?php echo esc_html( get_home_url() ); ?>" class="button-dark">
-		Back Home
-		</a>
-</div>
-</div>

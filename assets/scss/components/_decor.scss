@@ -45,3 +45,39 @@
     color: $light;
     font-size: 1.5rem;
 }
+
+
+.navigation li a,
+	.navigation li a:hover,
+	.navigation li.active a,
+	.navigation li.disabled {
+	color: #fff;
+	text-decoration:none;
+	}
+	
+	.navigation li {
+	display: inline;
+	}
+	
+	.navigation li a,
+	.navigation li a:hover,
+	.navigation li.active a,
+	.navigation li.disabled {
+        display: inline-block;
+        background-color: $highlight;
+        color: $light;
+        border: 1px solid $light;
+        border-radius: 0;
+        margin-right: 15px;
+        margin-bottom: 15px;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 500;
+	}
+	
+	.navigation li a:hover,
+	.navigation li.active a {
+	    background-color: $light;
+		color: $highlight;
+		border: 1px solid $highlight;
+    }

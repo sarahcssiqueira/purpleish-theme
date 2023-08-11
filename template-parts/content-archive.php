@@ -8,27 +8,17 @@
  */
 
 ?>
-<div class="">
+<div class="inner-medium grid-item">
 
-	<div class=""> 
-		<h2> 
-			<a href="
-				<?php the_permalink(); ?>">
-				<?php the_title(); ?>
-			</a> 
-		<h2>
+	<div class="inner-small"> 
+		<h2 class="archive-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><h2>
 	</div>
 
-	<span class="">
-		<?php the_date(); ?>
-	</span>
+	<p class="date"><?php the_date(); ?></p>
 
-	<div class="">
-			<?php the_excerpt(); ?>
-	</div>
+	<p class="inner-small"><?php the_excerpt(); ?></p>
 
-	<div class="">
-		<a class="" href="<?php the_permalink(); ?>">Read more &rarr;</a>
-	</div>
+	<a href="<?php the_permalink(); ?>"><button class="button-light-small">Read More &rarr;</button></a>
+
 
 </div>

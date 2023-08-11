@@ -11,18 +11,9 @@ get_header(); ?>
 
 	<main class="container-light">
 
-			<?php
-			if ( have_posts() ) {
+			<?php get_template_part( 'template-parts/content', 'post' ); ?>
 
-				while ( have_posts() ) {
-
-					the_post();
-
-					get_template_part( 'template-parts/content', 'post' );
-
-				}
-			};
-			?>
+</nav>
 
 </main>
 

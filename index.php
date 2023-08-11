@@ -27,7 +27,10 @@
 			}
 		};
 		?>
+		<div class="inner-medium">
 
+		<?php numeric_pagination(); ?>
+	</div>
 		</div>
 
 <?php get_footer(); ?>
