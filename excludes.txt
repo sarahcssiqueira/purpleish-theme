@@ -2,3 +2,15 @@
 /.git/
 /.github/
 /node_modules/
+/assets/
+.babelrc
+.eslintignore
+.eslintrc.json
+.gitignore
+.phpcs.xml
+.stylelintrc.json
+composer.json
+excludes.txt
+package-lock.json
+package.json
+webpack.config.js
