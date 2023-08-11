@@ -1,0 +1,4 @@
+/deploy_key 
+/.git/
+/.github/
+/node_modules/

@@ -34,11 +34,9 @@ jobs:
 
       - name: Sync theme files
         run: "rsync --delete -avO
-          --exclude /deploy_key \
-          --exclude /.git/ \
-          --exclude /.github/ \
-          --exclude /assets/node_modules/ \
+          --exclude-from=${{ env.EXCLUDES }}
           ./ ${{ env.SSH_USER }}@${{ env.SSH_HOST }}:${{ env.DEST }}"
         env:
           SSH_HOST: digitalocean
           DEST: "/var/www/purpleish-theme/wp-content/themes/purpleish-theme"
+          EXCLUDES: excludes.txt
