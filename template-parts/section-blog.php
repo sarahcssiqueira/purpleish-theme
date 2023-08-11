@@ -8,7 +8,9 @@
  */
 
 ?>
-<div class="inner-large">
+<div class="container-light inner-large">
+
+<h2 class="section-title">Latest Posts</h2>
 
 	<div class="grid">
 
@@ -26,10 +28,11 @@
 						$post_data->the_post();
 					?>
 
-			<div class="grid-item inner-small"> 
+			<div class="grid-item inner-small">
+					<?php the_post_thumbnail(); ?>
 				<h2 class="inner-small"><a href="<?php the_permalink(); ?>"><?php echo esc_html( get_the_title() ); ?></a></h2>
 				<p><?php the_excerpt(); ?></p>
-				<a href="<?php the_permalink(); ?>" class="inner-small">Read More</a>
+				<a href="<?php the_permalink(); ?>"><button class="button-light-small">Read More</button></a>
 			</div>
 
 					<?php

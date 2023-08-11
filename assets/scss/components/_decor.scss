@@ -1,21 +1,47 @@
-/* Banner */
-.banner {
-	background-image: url($main-banner);
-	background-size: cover;
-	text-align: center;
+/* Counter */
+.counter {
+	display: grid;
+    grid-auto-columns: 1fr;
+    gap: 1em;
+    grid-template-areas:
+        'one two three four'
 }
 
-/* Counter  & Services */
-.counter, .services {
-	width: 50%;
+@media screen and (max-width:$phone) {
+    .counter {
+        display: grid;
+        grid-auto-columns: 1fr;
+        gap: 1em;
+        grid-template-areas:
+            'one two'
+    }
+}
+@media screen and (max-width:$phone-small) {
+    .counter {
+        display: grid;
+        grid-auto-columns: 1fr;
+        gap: 1em;
+        grid-template-areas:
+            'one'
+    }
+}
+
+.counter-item {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $light;
+    box-shadow: 2px 2px 2px 1px $accent;
 }
 
 .counter-target {
 	color:$highlight;
     font-size: 2.5rem;
+    padding: 1rem;
 }
 
-.counter-icon, .services-icon {
-    color: $highlight;
-    font-size: 2rem;
+.counter-icon {
+    color: $light;
+    font-size: 1.5rem;
 }

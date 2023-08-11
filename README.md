@@ -6,14 +6,19 @@
 ![Deploy Status](https://github.com/sarahcssiqueira/purpleish-theme/actions/workflows/deployment.yml/badge.svg)
 [![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
 
-**PurpleIsh WordPress theme** wit a simple WordPress classic theme.
+**PurpleIsh WordPress theme** is a simple WordPress classic theme.
 
-![screenshot (2)](https://github.com/sarahcssiqueira/purpleish-theme/assets/82296194/03c2ef53-0e21-4d8c-9469-126d3b123d66)
+---
 
+> **Disclaimer:** It's work in progress, use at your own risk.
+
+---
+
+![Theme Screenshot](https://github.com/sarahcssiqueira/purpleish-theme/blob/master/screenshot.png?raw=true)
 
 ## Usage
 
-[TO DO]
+Clone (or download) this repository `git clone https://github.com/sarahcssiqueira/purpleish-theme` or download one of the [latest releases](https://github.com/sarahcssiqueira/purpleish-theme/releases).Place it in the **/wp-content/themes/** folder of your WordPress installation.
 
 ## Contributing
 

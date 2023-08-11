@@ -19,7 +19,6 @@
     .grid {
         display: grid;
         grid-auto-columns: 1fr;
-        gap: 1em;
         grid-template-areas:
             'one'
     }
@@ -30,9 +29,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #b30ceb;
+    background-color: white;
 }
 
 .grid-item:hover {
-    background-color: #b30ceb;
+    background-color: #bd17ff0e;
 }

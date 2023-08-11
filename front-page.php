@@ -13,10 +13,8 @@
 	<main>
 
 		<?php get_template_part( 'template-parts/section', 'heading' ); ?>
-		
-		<?php get_template_part( 'template-parts/section', 'blog' ); ?>
 
-		<?php get_template_part( 'template-parts/section', 'counter' ); ?>
+		<?php get_template_part( 'template-parts/section', 'blog' ); ?>
 
 		<?php get_template_part( 'template-parts/section', 'contact' ); ?>
 

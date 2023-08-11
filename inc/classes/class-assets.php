@@ -7,13 +7,13 @@
 
 class Assets {
 
-	function __construct() {
+	public function __construct() {
 
 		add_action( 'wp_enqueue_scripts', [ $this, 'purpleish_enqueues' ] );
 
 	}
 
-	function purpleish_enqueues() {
+	public function purpleish_enqueues() {
 		$version = wp_get_theme()->get( 'Version' );
 
 		wp_register_style(
@@ -42,12 +42,16 @@ class Assets {
 
 		wp_enqueue_style(
 			'main-css',
-			get_stylesheet_uri()
+			get_stylesheet_uri(),
+			[],
+			$version,
 		);
 
 		wp_enqueue_style(
 			'font-awesome',
-			get_stylesheet_uri()
+			get_stylesheet_uri(),
+			[],
+			$version,
 		);
 
 		wp_enqueue_script(
@@ -56,7 +60,7 @@ class Assets {
 
 		wp_register_style(
 			'google-fonts',
-			'href="https://fonts.googleapis.com/css2?family=Fasthand&family=Oswald:wght@400;500;600;700&family=Roboto+Condensed:wght@300;400;700&family=Roboto:wght@300;400;500;700;900&display=swap',
+			'href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap',
 			[],
 			$version,
 			'all'
@@ -64,7 +68,9 @@ class Assets {
 
 		wp_enqueue_style(
 			'google-fonts',
-			get_stylesheet_uri()
+			get_stylesheet_uri(),
+			[],
+			$version,
 		);
 	}
 

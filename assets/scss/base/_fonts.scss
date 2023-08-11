@@ -5,9 +5,16 @@ h1, h2, h3 {
 	color: $highlight;
 }
 
-h4, h5, h6, p, span {
+h4, h5, h6 {
     font-family: $font-secondary;
 	text-align: justify;
+}
+
+p, span {
+    font-family: $font-secondary;
+	text-align: justify;
+    color: rgb(58, 58, 58);
+
 }
 
 a {
@@ -21,5 +28,33 @@ a {
 }
 
 .section-title {
-    font-size: 2rem;
+    position: relative;
+    max-width: 500px;
+    margin: auto auto;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.section-title::before {
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    background-color: $highlight;
+}
+
+.section-title::after {
+    content:" ";
+    display: block;
+    height: 2px;
+    width: 50px;
+    position: absolute;
+    top: 50%;
+    right: 25%;
+    background-color: $highlight;
 }

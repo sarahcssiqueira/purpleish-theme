@@ -11,7 +11,7 @@
 <div class="">
 
 	<div class=""> 
-		<h2> 
+		<h2 class="section-title"> 
 			<a href="
 				<?php the_permalink(); ?>">
 				<?php the_title(); ?>

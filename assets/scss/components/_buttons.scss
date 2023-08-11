@@ -17,6 +17,26 @@
 	}
 }
 
+.button-light-small {
+	display: inline-block;
+	background-color: $light;
+	color: $highlight;
+	border: 1px solid $highlight;
+	border-radius: 0;
+	margin-right: 15px;
+    margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 5px 10px;
+	font-size: 14px;
+	font-weight: 500;
+	&:hover{
+		cursor: pointer;
+		background-color: $highlight;
+		color: $light;
+		border: 1px solid $light;
+	}
+}
+
 .button-dark {
 	display: inline-block;
 	background-color: $highlight;

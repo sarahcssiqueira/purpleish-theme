@@ -12,7 +12,7 @@
 <div class="container-light inner-small">
 
 	<div class=""> 
-		<h2> 
+		<h2 class="section-title"> 
 			<a href="
 				<?php the_permalink(); ?>">
 				<?php the_title(); ?>

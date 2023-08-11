@@ -30,14 +30,7 @@ class Supports {
 			]
 		);
 
-		add_theme_support(
-			'custom-background',
-			[
-				'default-color'  => '3c738c',
-				'default-image'  => get_template_directory_uri() . '/assets/src/img/default-bg.jpg',
-				'default-repeat' => 'no-repeat',
-			]
-		);
+		add_theme_support( 'post-thumbnails' );
 	}
 
 }
