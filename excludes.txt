@@ -1,6 +1,7 @@
 /deploy_key 
 /.git/
 /.github/
+/.vscode/
 /node_modules/
 /assets/
 .babelrc
@@ -14,3 +15,4 @@ excludes.txt
 package-lock.json
 package.json
 webpack.config.js
+README.md

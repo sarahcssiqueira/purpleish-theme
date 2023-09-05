@@ -29,8 +29,14 @@
 		?>
 		<div class="inner-medium">
 
-		<?php numeric_pagination(); ?>
+<? require_once PURPLEISH_DIR_PATH . '/inc/classes/class-features.php'; ?>
+
+	<?php
+	$pagination = new Features();
+	$pagination->numeric_pagination();
+	?>
+
 	</div>
-		</div>
+</div>
 
 <?php get_footer(); ?>

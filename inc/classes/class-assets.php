@@ -4,7 +4,6 @@
  *
  * @package purpleish_theme
  */
-
 class Assets {
 
 	public function __construct() {
@@ -27,6 +26,14 @@ class Assets {
 		wp_register_style(
 			'font-awesome',
 			'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+			[],
+			$version,
+			'all'
+		);
+
+		wp_register_style(
+			'google-fonts',
+			'href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap',
 			[],
 			$version,
 			'all'
@@ -58,14 +65,6 @@ class Assets {
 			'main-js'
 		);
 
-		wp_register_style(
-			'google-fonts',
-			'href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap',
-			[],
-			$version,
-			'all'
-		);
-
 		wp_enqueue_style(
 			'google-fonts',
 			get_stylesheet_uri(),
@@ -73,5 +72,4 @@ class Assets {
 			$version,
 		);
 	}
-
 }

@@ -10,6 +10,7 @@ class Supports {
 	public function __construct() {
 
 		add_action( 'after_setup_theme', [ $this, 'theme_support' ] );
+		add_action( 'after_setup_theme', [ $this, 'thumbnail_custom_size' ] );
 	}
 
 	public function theme_support() {
@@ -32,5 +33,10 @@ class Supports {
 
 		add_theme_support( 'post-thumbnails' );
 	}
+
+	public function thumbnail_custom_size() {
+		add_image_size( 'blog-grid', 400, 200, true );
+	}
+
 
 }

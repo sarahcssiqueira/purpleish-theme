@@ -29,7 +29,7 @@
 					?>
 
 			<div class="grid-item">
-					<?php the_post_thumbnail(); ?>
+					<?php the_post_thumbnail( 'blog-grid' ); ?>
 
 				<div class="grid-item_list inner-small">
 					<h2 class="inner-small"><a href="<?php the_permalink(); ?>"><?php echo esc_html( get_the_title() ); ?></a></h2>
