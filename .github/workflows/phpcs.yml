@@ -1,6 +1,9 @@
 name: PHPCS
 
-on: push
+on:
+  pull_request:
+    paths:
+      - "**.php"
 
 jobs:
   build:
@@ -11,14 +14,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - name: Install dependencies
+      - name: Install Composer Dependencies
         run: composer install
 
-      - name: Set wpcs path
+      - name: Set WordPress Coding Standards path
         run: composer cstd
 
-      - name: Run phpcbf
-        run: composer cbf
-
-      - name: Run phpcs
+      - name: Run phpcs command
         run: composer cs
+
+      - name: Save PHPCS Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: phpcs-report
+          path: phpcs-reports

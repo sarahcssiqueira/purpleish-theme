@@ -1,9 +1,4 @@
 {
-    "phpcs.enable": true,
-    "phpcs.lintOnSave": true,
-    "phpcs.showSources": false,
-    "phpcs.standard": "WordPress",
-    "phpcs.ignorePatterns": [
-        "*/vendor/*"
-    ],
+    "phpCodeSniffer.standard":	"Automatic",
+    "phpCodeSniffer.exec.osx":"./vendor/bin/phpcs"
 }
